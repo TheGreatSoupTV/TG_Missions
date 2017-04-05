@@ -38,7 +38,7 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) the
 			if(player != vehicle player) exitWith { };
 			if(life_interrupted) exitWith { };
 		};
-		//if!("ToolKit" in (items player)) exitWith {hint localize "STR_NOTF_MissingKit"; };
+		//if!("ToolKit" in (items player)) exitWith {hint localize //"STR_NOTF_MissingKit"; };
 		life_action_inUse = false;
 		5 cutText ["","PLAIN"];
 		player playActionNow "stop";
