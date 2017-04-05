@@ -21,6 +21,7 @@ player addBackpack "B_AssaultPack_cbr";
 player addItemToBackpack "ToolKit";
 player addItemToBackpack "ACE_M26_Clacker";
 for "_i" from 1 to 3 do {player addItemToBackpack "DemoCharge_Remote_Mag";};
+player addItemToBackpack "ACE_EntrenchingTool";
 player addHeadgear "Desert_ECH";
 
 player addWeapon "rhs_weap_mk18_grip";

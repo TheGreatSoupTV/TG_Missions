@@ -20,6 +20,7 @@ player addBackpack "everest_packDesert";
 player addItemToBackpack "ACE_Flashlight_XL50";
 player addItemToBackpack "rhs_200rnd_556x45_T_SAW";
 player addItemToBackpack "rhs_200rnd_556x45_M_SAW";
+player addItemToBackpack "ACE_EntrenchingTool";
 player addHeadgear "Desert_ECH";
 
 player addWeapon "rhs_weap_m249_pip_S";

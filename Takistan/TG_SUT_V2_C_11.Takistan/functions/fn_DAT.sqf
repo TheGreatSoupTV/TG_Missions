@@ -19,6 +19,7 @@ for "_i" from 1 to 7 do {player addItemToVest "rhs_mag_30Rnd_556x45_Mk318_Stanag
 player addBackpack "everest_packDesert";
 for "_i" from 1 to 2 do {player addItemToBackpack "rhs_mag_smaw_SR";};
 for "_i" from 1 to 2 do {player addItemToBackpack "rhs_mag_smaw_HEDP";};
+player addItemToBackpack "ACE_EntrenchingTool";
 player addHeadgear "Desert_ECH";
 
 player addWeapon "rhs_weap_mk18_grip";

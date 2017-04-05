@@ -19,6 +19,7 @@ player addItemToVest "ACE_RangeCard";
 player addItemToVest "ACE_Kestrel4500";
 player addItemToVest "optic_NVS";
 for "_i" from 1 to 8 do {player addItemToVest "rhsusf_20Rnd_762x51_m118_special_Mag";};
+player addItemToVest "ACE_EntrenchingTool";
 player addHeadgear "Desert_ECH";
 
 player addWeapon "rhs_weap_sr25_ec";
