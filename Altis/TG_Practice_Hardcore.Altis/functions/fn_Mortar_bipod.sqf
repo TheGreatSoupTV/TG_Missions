@@ -31,7 +31,7 @@ for "_i" from 1 to 2 do {player addItemToVest "rhs_mag_an_m8hc";};
 player addItemToVest "B_IR_Grenade";
 player addItemToVest "rhs_mag_m18_green";
 player addItemToVest "rhs_mag_m18_red";
-player addBackpack "B_Mortar_01_support_F";
+player addBackpack "I_Mortar_01_support_F";
 player addHeadgear "Scorpion_Helmet1";
 
  

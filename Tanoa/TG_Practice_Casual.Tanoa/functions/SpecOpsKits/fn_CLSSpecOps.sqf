@@ -35,7 +35,7 @@ for "_i" from 1 to 2 do {player addItemToBackpack "ACE_bloodIV";};
 for "_i" from 1 to 15 do {player addItemToBackpack "ACE_fieldDressing";};
 for "_i" from 1 to 5 do {player addItemToBackpack "ACE_epinephrine";};
 for "_i" from 1 to 10 do {player addItemToBackpack "ACE_morphine";};
-for "_i" from 1 to 2 do {player addItemToBackpack "HandGrenade";};
+for "_i" from 1 to 2 do {player addItemToBackpack "rhs_mag_m67";};
 player addItemToBackpack "ACE_EarPlugs";
 player addItemToBackpack "ACE_MapTools";
 player addItemToBackpack "ACE_CableTie";

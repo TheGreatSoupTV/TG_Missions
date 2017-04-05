@@ -11,7 +11,6 @@ player addWeapon "rhs_weap_m249_pip_L";
 player addPrimaryWeaponItem "rhsusf_acc_anpeq15side_bk";
 player addPrimaryWeaponItem "rhsusf_acc_eotech_552";
 player addWeapon "rhsusf_weap_glock17g4";
-player addHandgunItem "rhsusf_acc_omega9k";
  
 player forceAddUniform "Scorpion_Camo";
 player addItemToUniform "ACE_Flashlight_XL50";

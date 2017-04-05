@@ -19,7 +19,7 @@ class SherwoodMemberRespawnInv
 			   "ItemMap",
 			   "ItemCompass",
 			   "ItemWatch",
-			   "tf_anprc152_1",
+			   "tf_anprc152",
 			   "ItemGPS",
 			   "NVGoggles_OPFOR"
 			   

@@ -6,39 +6,40 @@ removeVest player;
 removeBackpack player;
 removeHeadgear player;
 removeGoggles player;
-
-player addWeapon "LMG_03_F";
-player addPrimaryWeaponItem "SMA_ANPEQ15_BLK";
-player addPrimaryWeaponItem "SMA_eotech552";
-player addWeapon "hgun_ACPC2_F";
-
+ 
+player addWeapon "rhs_weap_m249_pip_L";
+player addPrimaryWeaponItem "rhsusf_acc_anpeq15side_bk";
+player addPrimaryWeaponItem "rhsusf_acc_eotech_552";
+player addWeapon "rhsusf_weap_glock17g4";
+ 
 player forceAddUniform "MCB_Camo";
 player addItemToUniform "ACE_Flashlight_XL50";
-player addItemToUniform "ACE_microDAGR";
 player addItemToUniform "ACE_EarPlugs";
 player addItemToUniform "ACE_MapTools";
 player addItemToUniform "ACE_CableTie";
-player addItemToUniform "200Rnd_556x45_Box_Red_F";
+player addItemToUniform "rhs_200rnd_556x45_T_SAW";
+player addItemToUniform "rhsusf_mag_17Rnd_9x19_FMJ";
 player addVest "MCB_Vest_1";
 for "_i" from 1 to 2 do {player addItemToVest "ACE_fieldDressing";};
 for "_i" from 1 to 2 do {player addItemToVest "ACE_morphine";};
-for "_i" from 1 to 3 do {player addItemToVest "SmokeShell";};
+player addItemToVest "rhs_mag_m18_green";
+for "_i" from 1 to 2 do {player addItemToVest "rhs_mag_an_m8hc";};
+player addItemToVest "rhs_mag_m18_red";
 player addItemToVest "B_IR_Grenade";
-player addItemToVest "SmokeShellGreen";
-player addItemToVest "SmokeShellRed";
-for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
-for "_i" from 1 to 2 do {player addItemToVest "9Rnd_45ACP_Mag";};
-player addItemToVest "200Rnd_556x45_Box_Red_F";
+player addItemToVest "rhs_mag_m67";
 for "_i" from 1 to 2 do {player addItemToVest "Chemlight_green";};
 for "_i" from 1 to 2 do {player addItemToVest "Chemlight_red";};
+player addItemToVest "rhsusf_mag_17Rnd_9x19_FMJ";
+player addItemToVest "rhs_200rnd_556x45_T_SAW";
 player addHeadgear "MCB_Helmet1";
+ 
 
  
 
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
-player linkItem "tf_anprc152_1";
+player linkItem "tf_anprc152";
 player linkItem "ItemGPS";
 player linkItem "NVGoggles_OPFOR";
  

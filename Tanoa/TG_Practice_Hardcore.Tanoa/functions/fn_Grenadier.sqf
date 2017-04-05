@@ -7,14 +7,13 @@ removeBackpack player;
 removeHeadgear player;
 removeGoggles player;
  
-player addWeapon "SMA_HK416GLOD";
-player addPrimaryWeaponItem "SMA_ANPEQ15_BLK";
-player addPrimaryWeaponItem "SMA_eotech552";
-player addWeapon "hgun_ACPC2_F";
+player addWeapon "rhs_weap_m4a1_blockII_M203_bk";
+player addPrimaryWeaponItem "rhsusf_acc_anpeq15side_bk";
+player addPrimaryWeaponItem "rhsusf_acc_eotech_552";
+player addWeapon "rhsusf_weap_glock17g4";
  
 player forceAddUniform "MCB_Camo";
 player addItemToUniform "ACE_Flashlight_XL50";
-player addItemToUniform "ACE_microDAGR";
 player addItemToUniform "ACE_EarPlugs";
 player addItemToUniform "ACE_MapTools";
 player addItemToUniform "ACE_CableTie";
@@ -24,19 +23,19 @@ for "_i" from 1 to 2 do {player addItemToUniform "Chemlight_red";};
 player addVest "MCB_Vest_1";
 for "_i" from 1 to 2 do {player addItemToVest "ACE_fieldDressing";};
 for "_i" from 1 to 2 do {player addItemToVest "ACE_morphine";};
-for "_i" from 1 to 3 do {player addItemToVest "SmokeShell";};
+for "_i" from 1 to 2 do {player addItemToVest "rhs_mag_an_m8hc";};
 player addItemToVest "B_IR_Grenade";
-player addItemToVest "SmokeShellGreen";
-player addItemToVest "SmokeShellRed";
-for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
-for "_i" from 1 to 3 do {player addItemToVest "9Rnd_45ACP_Mag";};
-for "_i" from 1 to 4 do {player addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};
+player addItemToVest "rhs_mag_m18_green";
+player addItemToVest "rhs_mag_m18_red";
+for "_i" from 1 to 2 do {player addItemToVest "rhs_mag_m67";};
+for "_i" from 1 to 2 do {player addItemToVest "rhsusf_mag_17Rnd_9x19_FMJ";};
+for "_i" from 1 to 3 do {player addItemToVest "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
 player addBackpack "MCB_Backpack_Compact";
-for "_i" from 1 to 8 do {player addItemToBackpack "1Rnd_HE_Grenade_shell";};
-for "_i" from 1 to 4 do {player addItemToBackpack "1Rnd_Smoke_Grenade_shell";};
-for "_i" from 1 to 2 do {player addItemToBackpack "1Rnd_SmokeRed_Grenade_shell";};
+for "_i" from 1 to 8 do {player addItemToBackpack "rhs_mag_M441_HE";};
+for "_i" from 1 to 4 do {player addItemToBackpack "rhs_mag_m714_White";};
+for "_i" from 1 to 2 do {player addItemToBackpack "rhs_mag_m713_Red";};
 for "_i" from 1 to 2 do {player addItemToBackpack "ACE_HuntIR_M203";};
-for "_i" from 1 to 3 do {player addItemToBackpack "30Rnd_556x45_Stanag_Tracer_Red";};
+for "_i" from 1 to 3 do {player addItemToBackpack "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
 player addHeadgear "MCB_Helmet1";
  
 
@@ -45,7 +44,7 @@ player addHeadgear "MCB_Helmet1";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
-player linkItem "tf_anprc152_1";
+player linkItem "tf_anprc152";
 player linkItem "ItemGPS";
 player linkItem "NVGoggles_OPFOR";
  
