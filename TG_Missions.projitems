@@ -3171,7 +3171,7 @@
     <None Include="$(MSBuildThisFileDirectory)Takistan\TG_SUT_V2_C_11.Takistan\taw_vd\fn_updateViewDistance.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Takistan\TG_SUT_V2_C_11.Takistan\taw_vd\GUI.h" />
     <None Include="$(MSBuildThisFileDirectory)Takistan\TG_SUT_V2_C_9.Takistan.pbo" />
-    <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_1stBattGuerrillaWarfar.Tanoa\mission.sqm" />
+    <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_1stBattGuerrillaWarfare.Tanoa\mission.sqm" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Casual.Tanoa\configs\functions.hpp" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Casual.Tanoa\configs\roleList.hpp" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Casual.Tanoa\configs\spawnEquipment.hpp" />
