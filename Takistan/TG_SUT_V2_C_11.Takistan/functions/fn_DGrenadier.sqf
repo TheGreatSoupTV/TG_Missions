@@ -11,6 +11,7 @@ player forceAddUniform "everestdesClothing";
 for "_i" from 1 to 15 do {player addItemToUniform "ACE_elasticBandage";};
 for "_i" from 1 to 10 do {player addItemToUniform "ACE_morphine";};
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_packingBandage";};
+player addItemToUniform "ACE_EarPlugs";
 player addVest "desVest";
 for "_i" from 1 to 10 do {player addItemToVest "rhs_mag_M433_HEDP";};
 for "_i" from 1 to 2 do {player addItemToVest "rhsusf_mag_17Rnd_9x19_JHP";};
