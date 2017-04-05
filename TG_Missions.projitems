@@ -116,7 +116,6 @@
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Casual.Altis\dialogs\DivingLoadoutUI.hpp" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Casual.Altis\dialogs\SpecOpsLoadoutUI.hpp" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Casual.Altis\dialogs\StandardLoadoutUI.hpp" />
-    <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Casual.Altis\functions.zip" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Casual.Altis\functions\CommonKits\fn_Crewman.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Casual.Altis\functions\CommonKits\fn_HeliPilot.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Casual.Altis\functions\CommonKits\fn_JetPilot.sqf" />
