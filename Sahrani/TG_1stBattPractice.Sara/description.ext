@@ -1,6 +1,6 @@
 author = Duke_of_Games_25 [TG], JediNarwals [TG];
 overviewText = "Tacticalgaming.net Arma Division 1st Battalion";
-onLoadName = Tactical Gaming Takistan Operations;
+onLoadName = Tactical Gaming Sahrani Operations;
 
 respawn      = "BASE";
 respawndelay = 3;

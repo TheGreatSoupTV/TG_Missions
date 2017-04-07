@@ -15,4 +15,23 @@ enableSaving [false,false];												// "Everything Not saved will be lost." -
 //player enableFatigue false;											// Disables fatigue
 player enableAimPrecision false;										// Does fatigue affect your aim
 
-[] execVM "functions\fn_fatigue.sqf";                                   // Quicksilver's fatigue
+removeAllWeapons player;
+removeAllItems player;
+removeAllAssignedItems player;
+removeUniform player;
+removeVest player;
+removeBackpack player;
+removeHeadgear player;
+removeGoggles player;
+
+player forceAddUniform "everestdesClothing";
+player addVest "desVest";
+
+player linkItem "ItemMap";
+player linkItem "ItemCompass";
+player linkItem "ACE_Altimeter";
+player linkItem "tf_anprc152_9";
+player linkItem "ItemGPS";
+
+player setFace "WhiteHead_21";
+player setSpeaker "Male09ENG";
