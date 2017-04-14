@@ -27,12 +27,10 @@ for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_m67";};
 for "_i" from 1 to 2 do {this addItemToVest "SmokeShell";};
 this addItemToVest "SmokeShellGreen";
 this addItemToVest "SmokeShellRed";
-for "_i" from 1 to 4 do {this addItemToVest "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
+for "_i" from 1 to 3 do {this addItemToVest "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
 this addBackpack "everest_packDesert";
-this addItemToBackpack "ACE_DefusalKit";
-this addItemToBackpack "ACE_Clacker";
-this addItemToBackpack "MineDetector";
-for "_i" from 1 to 4 do {this addItemToBackpack "rhsusf_m112_mag";};
+for "_i" from 1 to 2 do {this addItemToBackpack "rhs_mag_smaw_HEAA";};
+this addItemToBackpack "rhs_mag_smaw_SR";
 this addHeadgear "Desert_ECH";
 
 comment "Add weapons";
@@ -41,6 +39,8 @@ this addPrimaryWeaponItem "rhsusf_acc_nt4_black";
 this addPrimaryWeaponItem "rhsusf_acc_anpeq15side_bk";
 this addPrimaryWeaponItem "rhsusf_acc_eotech_xps3";
 this addPrimaryWeaponItem "rhsusf_acc_grip1";
+this addWeapon "rhs_weap_smaw_green";
+this addSecondaryWeaponItem "rhs_weap_optic_smaw";
 this addWeapon "rhsusf_weap_glock17g4";
 this addWeapon "Binocular";
 

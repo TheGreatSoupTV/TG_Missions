@@ -560,8 +560,11 @@
     <None Include="$(MSBuildThisFileDirectory)Chenarus\TG_SUT_Chernarus.Chernarus\taw_vd\GUI.h" />
     <None Include="$(MSBuildThisFileDirectory)Sahrani\TG_1stBattPractice.Sara.pbo" />
     <None Include="$(MSBuildThisFileDirectory)Sahrani\TG_1stBattPractice.Sara\description.ext" />
-    <None Include="$(MSBuildThisFileDirectory)Sahrani\TG_1stBattPractice.Sara\functions\fn_DAR.sqf" />
-    <None Include="$(MSBuildThisFileDirectory)Sahrani\TG_1stBattPractice.Sara\functions\fn_DAT.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Sahrani\TG_1stBattPractice.Sara\functions\fn_DARM.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Sahrani\TG_1stBattPractice.Sara\functions\fn_HAA.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Sahrani\TG_1stBattPractice.Sara\functions\fn_DHAT.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Sahrani\TG_1stBattPractice.Sara\functions\fn_DriflemanAT.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Sahrani\TG_1stBattPractice.Sara\functions\fn_DARL.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Sahrani\TG_1stBattPractice.Sara\functions\fn_DCLS.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Sahrani\TG_1stBattPractice.Sara\functions\fn_Dengineer.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Sahrani\TG_1stBattPractice.Sara\functions\fn_DGrenadier.sqf" />
