@@ -382,7 +382,7 @@ class Mission
 	class Intel
 	{
 		briefingName="TacticalGaming.net/HQ Sahrani Operations";
-		overviewText="Tactical Gaming Sahrani Operations";
+		overviewText="TG Sahrani Operations";
 		timeOfChanges=1800.0002;
 		startWeather=0.15000001;
 		startWind=0.1;
