@@ -43,8 +43,6 @@ player addGoggles "G_Balaclava_TI_blk_F";
 player addItemToBackpack "rhs_mag_smaw_HEDP";
 for "_i" from 1 to 2 do {player addItemToBackpack "rhs_mag_smaw_SR";};
 for "_i" from 1 to 2 do {player addItemToBackpack "rhs_mag_mk84";};
-player addItemToBackpack "rhs_mag_30Rnd_556x45_Mk318_Stanag";
-
 
  
 player linkItem "ItemMap";
