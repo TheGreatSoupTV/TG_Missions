@@ -47,6 +47,7 @@ player linkItem "ItemCompass";
 player linkItem "ACE_Altimeter";
 player linkItem "tf_anprc148jem_2";
 player linkItem "ItemGPS";
+player linkItem "NVGoggles_OPFOR";
 
 player setFace "WhiteHead_11";
 player setSpeaker "ace_novoice";
