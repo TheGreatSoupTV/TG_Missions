@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={20787.689,43.513279,7251.2397};
-		dir[]={0.14242724,-0.33816943,-0.93038213};
-		up[]={0.051185139,0.94098419,-0.33436736};
-		aside[]={-0.98858547,1.2379605e-006,-0.15133828};
+		pos[]={20852.852,68.895248,7290.4312};
+		dir[]={-0.42889869,-0.28126019,-0.85860044};
+		up[]={-0.1257385,0.95953089,-0.25170943};
+		aside[]={-0.89468288,1.224369e-006,0.44692409};
 	};
 };
 binarizationWanted=0;
@@ -1223,6 +1223,7 @@ class Mission
 			};
 			id=160;
 			type="RHS_CH_47F_10";
+			atlOffset=-1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1318,7 +1319,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this disableTIEquipment true;";
 			};
 			id=168;
 			type="RHS_AH64D";
@@ -1343,7 +1343,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				class Attribute1
+				{
+					property="AddAAMissiles";
+					expression="if(_value == 0)then{_this removeMagazineTurret ['rhs_mag_Sidewinder_heli_2',[0]]; _this removeWeaponTurret ['rhs_weap_SidewinderLauncher',[0]];}else{_this addMagazineTurret ['rhs_mag_Sidewinder_heli_2',[0]]; _this addWeaponTurret ['rhs_weap_SidewinderLauncher',[0]];};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 		class Item14

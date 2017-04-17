@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6418.7485,38.222805,5397.1685};
-		dir[]={0.6809324,-0.29593977,0.67007309};
-		up[]={0.21105739,0.95513982,0.20768712};
-		aside[]={0.70148128,-5.7467259e-006,-0.71286637};
+		pos[]={6413.9321,38.042725,5354.4331};
+		dir[]={-0.85965109,-0.5092656,0.043555103};
+		up[]={-0.50872976,0.86052245,0.025778159};
+		aside[]={0.050620623,-2.9653165e-006,0.99884647};
 	};
 };
 binarizationWanted=0;
@@ -1081,6 +1081,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="this disableTIEquipment true;";
 			};
 			id=167;
 			type="RHS_MELB_MH6M";
@@ -6146,6 +6147,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="this disableTIEquipment true;";
 				textures="desert";
 			};
 			id=323;
@@ -7053,6 +7055,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="this disableTIEquipment true;";
 				textures="Desert";
 			};
 			id=397;
