@@ -24,6 +24,8 @@ for "_i" from 1 to 2 do {player addItemToVest "ACE_HandFlare_Green";};
 for "_i" from 1 to 2 do {player addItemToVest "ACE_HandFlare_Red";};
 player addItemToVest "rhs_mag_m18_green";
 player addItemToVest "rhs_mag_m18_red";
+player addHeadgear "H_PilotHelmetHeli_B";
+
 
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
