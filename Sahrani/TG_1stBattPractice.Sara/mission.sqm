@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=300;
+		nextID=330;
 	};
 	class Camera
 	{
-		pos[]={18183.191,88.422592,18207.828};
-		dir[]={0.32096085,-0.45747581,-0.82939118};
-		up[]={0.16516373,0.8891232,-0.42679122};
-		aside[]={-0.93267584,3.0379888e-006,-0.36094132};
+		pos[]={18204.451,156.79893,18262.043};
+		dir[]={0.55806506,-0.67147702,-0.48772606};
+		up[]={0.50567728,0.74091178,-0.4419387};
+		aside[]={-0.65810871,2.7177157e-007,-0.75303578};
 	};
 };
 binarizationWanted=0;
@@ -52267,7 +52267,6 @@ class Mission
 				angles[]={0,1.3627824,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -52275,7 +52274,7 @@ class Mission
 			};
 			id=7929;
 			type="Pole_F";
-			atlOffset=0.21214771;
+			atlOffset=0.28172588;
 		};
 		class Item1879
 		{
@@ -71363,13 +71362,13 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={18095.268,26.355648,18823.854};
-				angles[]={0.23680511,0,0.015998369};
+				position[]={18095.268,26.355394,18823.854};
+				angles[]={0.23680627,0,0.016004669};
 			};
-			name="Tombstone";
+			name="GeorgeWashington";
 			id=8933;
 			type="ModuleCurator_F";
-			atlOffset=18.751253;
+			atlOffset=18.750999;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -71387,7 +71386,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="76561198143612172";
+							value="76561198101307240";
 						};
 					};
 				};
@@ -71425,7 +71424,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Tombstone [TG]";
+							value="GeorgeWashington [TG]";
 						};
 					};
 				};
