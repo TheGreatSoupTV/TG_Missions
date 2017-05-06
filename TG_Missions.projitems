@@ -50,6 +50,9 @@
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Casual.Altis\dialogs\DivingLoadoutUI.hpp" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Casual.Altis\dialogs\SpecOpsLoadoutUI.hpp" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Casual.Altis\dialogs\StandardLoadoutUI.hpp" />
+    <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Casual.Altis\functions\CommonFunctions\fn_Countdown.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Casual.Altis\functions\CommonFunctions\fn_StartStaticParadrop.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Casual.Altis\functions\CommonFunctions\fn_StaticParadrop.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Casual.Altis\functions\CommonKits\fn_Crewman.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Casual.Altis\functions\CommonKits\fn_HeliPilot.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Casual.Altis\functions\CommonKits\fn_JetPilot.sqf" />
@@ -130,6 +133,10 @@
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Casual.Altis\functions\SpecOpsKits\fn_SpotterSpecOps.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Casual.Altis\init.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Casual.Altis\mission.sqm" />
+    <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Casual.Altis\module_chatIntercept\commands.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Casual.Altis\module_chatIntercept\config.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Casual.Altis\module_chatIntercept\executeCommand.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Casual.Altis\module_chatIntercept\init.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Hardcore.Altis.pbo" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Hardcore.Altis\configs\functions.hpp" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Hardcore.Altis\configs\roleList.hpp" />
@@ -139,6 +146,9 @@
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Hardcore.Altis\dialogs\DivingLoadoutUI.hpp" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Hardcore.Altis\dialogs\SpecOpsLoadoutUI.hpp" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Hardcore.Altis\dialogs\StandardLoadoutUI.hpp" />
+    <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Hardcore.Altis\functions\CommonFunctions\fn_Countdown.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Hardcore.Altis\functions\CommonFunctions\fn_StartStaticParadrop.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Hardcore.Altis\functions\CommonFunctions\fn_StaticParadrop.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Hardcore.Altis\functions\CommonKits\fn_Crewman.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Hardcore.Altis\functions\CommonKits\fn_HeliPilot.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Hardcore.Altis\functions\CommonKits\fn_JetPilot.sqf" />
@@ -337,6 +347,10 @@
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_1stBattPublicOperations.Altis\scripts\vehicle\animate\ghosthawk.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_1stBattPublicOperations.Altis\scripts\vehicle\service\personalRepair.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_1stBattPublicOperations.Altis\scripts\vehicle\service\vehicleService.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Hardcore.Altis\module_chatIntercept\commands.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Hardcore.Altis\module_chatIntercept\config.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Hardcore.Altis\module_chatIntercept\executeCommand.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Hardcore.Altis\module_chatIntercept\init.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_PublicOperations.Altis.pbo" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_PublicOperations.Altis\call.fsm" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_PublicOperations.Altis\config\call.fsm" />
@@ -600,6 +614,9 @@
     <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Casual.Stratis\dialogs\DivingLoadoutUI.hpp" />
     <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Casual.Stratis\dialogs\SpecOpsLoadoutUI.hpp" />
     <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Casual.Stratis\dialogs\StandardLoadoutUI.hpp" />
+    <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Casual.Stratis\functions\CommonFunctions\fn_Countdown.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Casual.Stratis\functions\CommonFunctions\fn_StartStaticParadrop.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Casual.Stratis\functions\CommonFunctions\fn_StaticParadrop.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Casual.Stratis\functions\CommonKits\fn_Crewman.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Casual.Stratis\functions\CommonKits\fn_HeliPilot.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Casual.Stratis\functions\CommonKits\fn_JetPilot.sqf" />
@@ -680,6 +697,10 @@
     <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Casual.Stratis\functions\SpecOpsKits\fn_SpotterSpecOps.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Casual.Stratis\init.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Casual.Stratis\mission.sqm" />
+    <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Casual.Stratis\module_chatIntercept\commands.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Casual.Stratis\module_chatIntercept\config.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Casual.Stratis\module_chatIntercept\executeCommand.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Casual.Stratis\module_chatIntercept\init.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Hardcore.Stratis.pbo" />
     <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Hardcore.Stratis\configs\functions.hpp" />
     <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Hardcore.Stratis\configs\roleList.hpp" />
@@ -689,6 +710,9 @@
     <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Hardcore.Stratis\dialogs\DivingLoadoutUI.hpp" />
     <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Hardcore.Stratis\dialogs\SpecOpsLoadoutUI.hpp" />
     <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Hardcore.Stratis\dialogs\StandardLoadoutUI.hpp" />
+    <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Hardcore.Stratis\functions\CommonFunctions\fn_Countdown.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Hardcore.Stratis\functions\CommonFunctions\fn_StartStaticParadrop.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Hardcore.Stratis\functions\CommonFunctions\fn_StaticParadrop.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Hardcore.Stratis\functions\CommonKits\fn_Crewman.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Hardcore.Stratis\functions\CommonKits\fn_HeliPilot.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Hardcore.Stratis\functions\CommonKits\fn_JetPilot.sqf" />
@@ -769,6 +793,10 @@
     <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Hardcore.Stratis\functions\SpecOpsKits\fn_SpotterSpecOps.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Hardcore.Stratis\init.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Hardcore.Stratis\mission.sqm" />
+    <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Hardcore.Stratis\module_chatIntercept\commands.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Hardcore.Stratis\module_chatIntercept\config.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Hardcore.Stratis\module_chatIntercept\executeCommand.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Stratis\TG_Practice_Hardcore.Stratis\module_chatIntercept\init.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Stratis\TG_SUT_Training.Stratis\description.ext" />
     <None Include="$(MSBuildThisFileDirectory)Stratis\TG_SUT_Training.Stratis\functions\fn_AR.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Stratis\TG_SUT_Training.Stratis\functions\fn_AT.sqf" />
@@ -3431,6 +3459,9 @@
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Casual.Tanoa\dialogs\DivingLoadoutUI.hpp" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Casual.Tanoa\dialogs\SpecOpsLoadoutUI.hpp" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Casual.Tanoa\dialogs\StandardLoadoutUI.hpp" />
+    <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Casual.Tanoa\functions\CommonFunctions\fn_Countdown.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Casual.Tanoa\functions\CommonFunctions\fn_StartStaticParadrop.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Casual.Tanoa\functions\CommonFunctions\fn_StaticParadrop.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Casual.Tanoa\functions\CommonKits\fn_Crewman.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Casual.Tanoa\functions\CommonKits\fn_HeliPilot.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Casual.Tanoa\functions\CommonKits\fn_JetPilot.sqf" />
@@ -3511,6 +3542,10 @@
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Casual.Tanoa\functions\SpecOpsKits\fn_SpotterSpecOps.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Casual.Tanoa\init.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Casual.Tanoa\mission.sqm" />
+    <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Casual.Tanoa\module_chatIntercept\commands.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Casual.Tanoa\module_chatIntercept\config.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Casual.Tanoa\module_chatIntercept\executeCommand.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Casual.Tanoa\module_chatIntercept\init.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Hardcore.Tanoa.pbo" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Hardcore.Tanoa\configs\functions.hpp" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Hardcore.Tanoa\configs\roleList.hpp" />
@@ -3520,6 +3555,9 @@
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Hardcore.Tanoa\dialogs\DivingLoadoutUI.hpp" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Hardcore.Tanoa\dialogs\SpecOpsLoadoutUI.hpp" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Hardcore.Tanoa\dialogs\StandardLoadoutUI.hpp" />
+    <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Hardcore.Tanoa\functions\CommonFunctions\fn_Countdown.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Hardcore.Tanoa\functions\CommonFunctions\fn_StartStaticParadrop.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Hardcore.Tanoa\functions\CommonFunctions\fn_StaticParadrop.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Hardcore.Tanoa\functions\CommonKits\fn_Crewman.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Hardcore.Tanoa\functions\CommonKits\fn_HeliPilot.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Hardcore.Tanoa\functions\CommonKits\fn_JetPilot.sqf" />
@@ -3600,6 +3638,10 @@
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Hardcore.Tanoa\functions\SpecOpsKits\fn_SpotterSpecOps.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Hardcore.Tanoa\init.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Hardcore.Tanoa\mission.sqm" />
+    <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Hardcore.Tanoa\module_chatIntercept\commands.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Hardcore.Tanoa\module_chatIntercept\config.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Hardcore.Tanoa\module_chatIntercept\executeCommand.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Hardcore.Tanoa\module_chatIntercept\init.sqf" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Casual.Altis\images\loadingscreen.jpg" />

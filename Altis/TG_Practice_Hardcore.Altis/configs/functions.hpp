@@ -115,5 +115,14 @@ class TGFunctions
 			class HeliPilot {};
 			class JetPilot {};
 			class Crewman {};
+		};
+		
+		class CommonFunctions
+		{
+			file = "functions\CommonFunctions";
+			
+			class Countdown {};
+			class StaticParadrop {};
+			class StartStaticParadrop {};
 		}
 	};

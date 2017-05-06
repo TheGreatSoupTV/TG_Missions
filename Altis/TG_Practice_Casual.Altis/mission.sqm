@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=490;
+		nextID=501;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={20803.836,55.039165,7268.6021};
-		dir[]={0.75955158,-0.40930992,0.50575882};
-		up[]={0.34074989,0.91228974,0.22689168};
-		aside[]={0.55429065,1.4990801e-006,-0.83243507};
+		pos[]={20819.463,77.996407,7280.9087};
+		dir[]={0.8675403,-0.48744693,0.10008589};
+		up[]={0.48430237,0.87302291,0.055870697};
+		aside[]={0.11461838,2.1678861e-006,-0.9935112};
 	};
 };
 binarizationWanted=0;
@@ -89,13 +89,14 @@ addons[]=
 	"A3_Structures_F_Civ_Lamps",
 	"A3_Structures_F_EPA_Civ_Constructions",
 	"CUP_CAStructures_E_HouseC",
-	"mcc_sandbox"
+	"mcc_sandbox",
+	"rhsusf_c_HEMTT_A4"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=64;
+		items=65;
 		class Item0
 		{
 			className="A3_Structures_F";
@@ -535,6 +536,13 @@ class AddonsMetaData
 			name="MCC Sandbox";
 			author="shay_gman";
 		};
+		class Item64
+		{
+			className="rhsusf_c_HEMTT_A4";
+			name="HEMMTT A4 Trucks";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
 	};
 };
 randomSeed=5795402;
@@ -614,7 +622,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=150;
+		items=153;
 		class Item0
 		{
 			dataType="Object";
@@ -1344,7 +1352,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				class Attribute1
+				{
+					property="AddAAMissiles";
+					expression="if(_value == 0)then{_this removeMagazineTurret ['rhs_mag_Sidewinder_heli_2',[0]]; _this removeWeaponTurret ['rhs_weap_SidewinderLauncher',[0]];}else{_this addMagazineTurret ['rhs_mag_Sidewinder_heli_2',[0]]; _this addWeaponTurret ['rhs_weap_SidewinderLauncher',[0]];};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 		class Item14
@@ -15565,6 +15592,57 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item150
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={20875.512,25.80229,7346.293};
+				angles[]={0.085126832,2.3796546,0.049293593};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=492;
+			type="rhsusf_M977A4_AMMO_usarmy_d";
+			atlOffset=-0.0020027161;
+		};
+		class Item151
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={20880.633,25.478666,7351.8452};
+				angles[]={0.075853623,2.3704109,0.014664836};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=493;
+			type="rhsusf_M977A4_REPAIR_usarmy_d";
+			atlOffset=-0.0013217926;
+		};
+		class Item152
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={20869.766,25.975677,7340.189};
+				angles[]={0.037316564,2.3905275,0.050623242};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=500;
+			type="rhsusf_M978A4_BKIT_usarmy_d";
+			atlOffset=-0.0018253326;
 		};
 	};
 };

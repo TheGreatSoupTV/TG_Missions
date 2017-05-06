@@ -40,7 +40,7 @@ player addHeadgear "Tiger_Helmet1";
 player addGoggles "G_Balaclava_TI_blk_F";
 
  player addBackpack "Scorpion_Backpack_Compact";
-player addItemToBackpack "rhs_mag_smaw_HEDP";
+player addItemToBackpack "rhs_mag_smaw_HEAA";
 for "_i" from 1 to 2 do {player addItemToBackpack "rhs_mag_smaw_SR";};
 for "_i" from 1 to 2 do {player addItemToBackpack "rhs_mag_mk84";};
 

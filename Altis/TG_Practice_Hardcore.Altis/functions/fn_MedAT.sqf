@@ -35,7 +35,7 @@ player addItemToVest "rhs_mag_m18_red";
 player addHeadgear "Scorpion_Helmet1";
 
 player addBackpack "Scorpion_Backpack_Compact";
-player addItemToBackpack "rhs_mag_smaw_HEDP";
+player addItemToBackpack "rhs_mag_smaw_HEAA";
 for "_i" from 1 to 2 do {player addItemToBackpack "rhs_mag_smaw_SR";};
  
 player linkItem "ItemMap";

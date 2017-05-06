@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=672;
+		nextID=676;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2366.3423,53.175678,13303.656};
-		dir[]={0.79525858,-0.55741864,0.2389466};
-		up[]={0.53390253,0.83013898,0.16041516};
-		aside[]={0.28778514,1.5250407e-007,-0.95782638};
+		pos[]={2390.9211,36.531288,13285.776};
+		dir[]={-0.45286465,-0.66315782,0.59613866};
+		up[]={-0.40117431,0.74838543,0.52810025};
+		aside[]={0.79639542,1.3130484e-006,0.60498399};
 	};
 };
 binarizationWanted=0;
@@ -87,13 +87,14 @@ addons[]=
 	"rhsusf_c_fmtv",
 	"rhsusf_c_f22",
 	"A3_Structures_F_Heli_Items_Airport",
-	"mcc_sandbox"
+	"mcc_sandbox",
+	"rhsusf_c_HEMTT_A4"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=63;
+		items=64;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -526,6 +527,13 @@ class AddonsMetaData
 			name="MCC Sandbox";
 			author="shay_gman";
 		};
+		class Item63
+		{
+			className="rhsusf_c_HEMTT_A4";
+			name="HEMMTT A4 Trucks";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
 	};
 };
 randomSeed=5795402;
@@ -605,7 +613,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=123;
+		items=126;
 		class Item0
 		{
 			dataType="Group";
@@ -15141,6 +15149,57 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item123
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2367.1648,14.37503,13302.695};
+				angles[]={6.2778587,5.6049671,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=672;
+			type="rhsusf_M977A4_REPAIR_usarmy_d";
+			atlOffset=-4.7683716e-006;
+		};
+		class Item124
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2373.4514,14.392257,13307.5};
+				angles[]={6.2778587,5.6967106,6.2778587};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=673;
+			type="rhsusf_M977A4_AMMO_BKIT_usarmy_d";
+			atlOffset=-1.1444092e-005;
+		};
+		class Item125
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2381.6541,14.41899,13313.015};
+				angles[]={6.2778587,5.7182202,6.2805333};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=675;
+			type="rhsusf_M978A4_BKIT_usarmy_d";
+			atlOffset=-3.8146973e-006;
 		};
 	};
 };

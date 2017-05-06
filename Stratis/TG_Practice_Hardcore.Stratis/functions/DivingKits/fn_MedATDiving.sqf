@@ -23,7 +23,7 @@ for "_i" from 1 to 2 do {player addItemToUniform "Chemlight_green";};
 for "_i" from 1 to 2 do {player addItemToUniform "Chemlight_red";};
 
 player addBackpack "Scorpion_Backpack_Compact";
-player addItemToBackpack "rhs_mag_smaw_HEDP";
+player addItemToBackpack "rhs_mag_smaw_HEAA";
 player addWeapon "rhs_weap_smaw";
 player addSecondaryWeaponItem "rhs_weap_optic_smaw";
 

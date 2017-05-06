@@ -10,7 +10,7 @@ removeGoggles player;
  
 player addWeapon "srifle_DMR_03_F";
 player addPrimaryWeaponItem "acc_pointer_IR";
-player addPrimaryWeaponItem "optic_Holosight_blk_F";
+player addPrimaryWeaponItem "optic_MRCO";
 player addPrimaryWeaponItem "bipod_01_F_blk";
 player addWeapon "hgun_ACPC2_F";
 player addWeapon "ACE_Vector";
@@ -36,6 +36,7 @@ player addItemToVest "HandGrenade";
 for "_i" from 1 to 2 do {player addItemToVest "SmokeShell";};
 player addItemToVest "SmokeShellRed";
 player addItemToVest "SmokeShellGreen";
+player addBackpack "tf_rt1523g_big_rhs";
 player addHeadgear "H_HelmetSpecB";
  
 

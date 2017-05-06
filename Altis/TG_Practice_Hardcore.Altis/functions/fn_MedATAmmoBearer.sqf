@@ -30,7 +30,7 @@ player addItemToVest "B_IR_Grenade";
 for "_i" from 1 to 2 do {player addItemToVest "rhs_mag_m67";};
 for "_i" from 1 to 2 do {player addItemToVest "rhsusf_mag_17Rnd_9x19_FMJ";};
 player addBackpack "Scorpion_Backpack_Kitbag";
-player addItemToBackpack "rhs_mag_smaw_HEDP";
+player addItemToBackpack "rhs_mag_smaw_HEAA";
 player addHeadgear "Scorpion_Helmet1";
  
 

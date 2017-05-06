@@ -29,7 +29,7 @@ for "_i" from 1 to 2 do {player addItemToBackpack "rhs_mag_an_m8hc";};
 player addItemToBackpack "B_IR_Grenade";
 for "_i" from 1 to 2 do {player addItemToBackpack "rhs_mag_m67";};
 for "_i" from 1 to 2 do {player addItemToBackpack "rhsusf_mag_17Rnd_9x19_FMJ";};
-player addItemToBackpack "rhs_mag_smaw_HEDP";
+player addItemToBackpack "rhs_mag_smaw_HEAA";
 player addGoggles "G_B_Diving";
  
 
