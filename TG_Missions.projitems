@@ -10,6 +10,12 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)2ndBatt infiSTAR\%40infiSTAR_A3_TG\addons\a3_infiSTAR.pbo" />
+    <None Include="$(MSBuildThisFileDirectory)2ndBatt infiSTAR\%40infiSTAR_A3_TG\addons\a3_infiSTAR\A3AH.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)2ndBatt infiSTAR\%40infiSTAR_A3_TG\addons\a3_infiSTAR\A3AT.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)2ndBatt infiSTAR\%40infiSTAR_A3_TG\addons\a3_infiSTAR\config.cpp" />
+    <None Include="$(MSBuildThisFileDirectory)2ndBatt infiSTAR\%40infiSTAR_A3_TG\addons\a3_infiSTAR\debug.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)2ndBatt infiSTAR\%40infiSTAR_A3_TG\addons\a3_infiSTAR\fn_preInit.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)2ndBatt infiSTAR\%40infiSTAR_A3_TG\addons\a3_infiSTAR\infiSTAR_config.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_1stBattPactice.Altis.pbo" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_1stBattPactice.Altis\description.ext" />
     <None Include="$(MSBuildThisFileDirectory)Altis\TG_1stBattPactice.Altis\functions\fn_DARL.sqf" />
@@ -3644,6 +3650,7 @@
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_Practice_Hardcore.Tanoa\module_chatIntercept\init.sqf" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)2ndBatt infiSTAR\%40infiSTAR_A3_TG\addons\a3_infiSTAR\PboPrefix.txt" />
     <Content Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Casual.Altis\images\loadingscreen.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Altis\TG_Practice_Hardcore.Altis\images\loadingscreen.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Altis\TG_1stBattPublicOperations.Altis\images\loadingscreen.jpg" />
