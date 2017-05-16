@@ -8,7 +8,7 @@ class EditorData
 	toggles=10;
 	class ItemIDProvider
 	{
-		nextID=8938;
+		nextID=8940;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=330;
+		nextID=360;
 	};
 	class Camera
 	{
-		pos[]={18204.451,156.79893,18262.043};
-		dir[]={0.55806506,-0.67147702,-0.48772606};
-		up[]={0.50567728,0.74091178,-0.4419387};
-		aside[]={-0.65810871,2.7177157e-007,-0.75303578};
+		pos[]={17592.523,276.52161,19139.363};
+		dir[]={-0.096682578,-0.37739936,-0.92111331};
+		up[]={-0.039416343,0.92590266,-0.37554896};
+		aside[]={-0.99463993,4.5142879e-006,0.10438953};
 	};
 };
 binarizationWanted=0;
@@ -93,13 +93,15 @@ addons[]=
 	"A3_Signs_F",
 	"A3_Soft_F_Quadbike_01",
 	"ace_repair",
-	"A3_Modules_F_Curator_Curator"
+	"A3_Modules_F_Curator_Curator",
+	"A3_Boat_F_Jets_Carrier_01",
+	"A3_Structures_F_EPB_Civ_Graffiti"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=40;
+		items=41;
 		class Item0
 		{
 			className="A3_Structures_F";
@@ -378,6 +380,13 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item40
+		{
+			className="A3_Boat_F_Jets";
+			name="Arma 3 Jets - Boats and Submersibles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 randomSeed=7161047;
@@ -412,7 +421,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2758;
+		items=2760;
 		class Item0
 		{
 			dataType="Layer";
@@ -11150,7 +11159,7 @@ class Mission
 			};
 			id=5982;
 			type="B_Plane_CAS_01_F";
-			atlOffset=0.023291588;
+			atlOffset=-0.11428165;
 		};
 		class Item47
 		{
@@ -71913,6 +71922,80 @@ class Mission
 				};
 				nAttributes=5;
 			};
+		};
+		class Item2758
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17217.852,0.00038528442,18769.264};
+				angles[]={0,0.8372519,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=8938;
+			type="Land_Carrier_01_base_F";
+			atlOffset=62.188999;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isRepairFacility";
+					expression="_this setVariable ['ace_isRepairFacility',_value, true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item2759
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18288.211,10.688223,17975.465};
+				angles[]={0,4.5407867,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=8939;
+			type="Land_Graffiti_02_F";
+			atlOffset=1.6876764;
 		};
 	};
 };
