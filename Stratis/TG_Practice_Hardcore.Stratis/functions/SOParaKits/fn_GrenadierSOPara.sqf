@@ -43,7 +43,7 @@ player addHeadgear "Tiger_Helmet1";
 
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
-player linkItem "ItemWatch";
+player linkItem "ACE_Altimeter";
 player linkItem "tf_anprc152";
 player linkItem "ItemGPS";
 player linkItem "NVGoggles_OPFOR";
