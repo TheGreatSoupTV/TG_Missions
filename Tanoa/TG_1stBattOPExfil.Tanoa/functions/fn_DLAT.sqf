@@ -45,3 +45,4 @@ player linkItem "NVGoggles_OPFOR";
 
 player setFace "WhiteHead_11";
 player setSpeaker "ace_novoice";
+[player,"Everest"] call BIS_fnc_setUnitInsignia;
