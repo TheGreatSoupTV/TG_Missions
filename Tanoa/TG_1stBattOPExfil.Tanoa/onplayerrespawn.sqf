@@ -24,8 +24,8 @@ removeBackpack player;
 removeHeadgear player;
 removeGoggles player;
 
-player forceAddUniform "everestdesClothing";
-player addVest "desVest";
+player forceAddUniform "everestnightClothing";
+player addVest "nightVest";
 
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
