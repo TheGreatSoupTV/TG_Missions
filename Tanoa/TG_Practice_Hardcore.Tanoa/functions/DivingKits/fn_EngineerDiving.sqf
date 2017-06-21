@@ -28,7 +28,6 @@ player addItemToBackpack "B_IR_Grenade";
 player addItemToBackpack "rhs_mag_m18_green";
 player addItemToBackpack "rhs_mag_m18_red";
 for "_i" from 1 to 2 do {player addItemToBackpack "rhs_mag_m67";};
-player addBackpack "MCB_Backpack_Compact";
 player addItemToBackpack "ACE_Clacker";
 player addItemToBackpack "ACE_DefusalKit";
 for "_i" from 1 to 2 do {player addItemToBackpack "DemoCharge_Remote_Mag";};

@@ -14,29 +14,31 @@ player addPrimaryWeaponItem "optic_Holosight_blk_F";
 player addWeapon "hgun_ACPC2_F";
 player addWeapon "ACE_Vector";
  
-player forceAddUniform "U_B_CTRG_1";
-for "_i" from 1 to 5 do {player addItemToUniform "30Rnd_556x45_Stanag_red";};
+player forceAddUniform "U_B_GhillieSuit";
+player addItemToUniform "ACE_Flashlight_XL50";
+player addItemToUniform "ACE_EarPlugs";
+player addItemToUniform "ACE_MapTools";
+player addItemToUniform "ACE_CableTie";
+for "_i" from 1 to 2 do {player addItemToUniform "Chemlight_green";};
+for "_i" from 1 to 2 do {player addItemToUniform "Chemlight_red";};
+for "_i" from 1 to 2 do {player addItemToUniform "SmokeShell";};
+player addItemToUniform "B_IR_Grenade";
+player addItemToUniform "9Rnd_45ACP_Mag";
 player addVest "V_PlateCarrier2_blk";
 for "_i" from 1 to 2 do {player addItemToVest "ACE_fieldDressing";};
-player addItemToVest "ACE_CableTie";
-player addItemToVest "ACE_EarPlugs";
-player addItemToVest "ACE_IR_Strobe_Item";
-player addItemToVest "ACE_Flashlight_XL50";
-player addItemToVest "ACE_MapTools";
 for "_i" from 1 to 2 do {player addItemToVest "ACE_morphine";};
-player addItemToVest "ACE_Kestrel4500";
-player addItemToVest "ACE_ATragMX";
-player addItemToVest "ACE_RangeCard";
-player addItemToVest "ACE_microDAGR";
-player addItemToVest "30Rnd_556x45_Stanag_red";
-for "_i" from 1 to 2 do {player addItemToVest "9Rnd_45ACP_Mag";};
-for "_i" from 1 to 2 do {player addItemToVest "Chemlight_green";};
-for "_i" from 1 to 2 do {player addItemToVest "Chemlight_red";};
-player addItemToVest "B_IR_Grenade";
-player addItemToVest "HandGrenade";
-for "_i" from 1 to 2 do {player addItemToVest "SmokeShell";};
-player addItemToVest "SmokeShellRed";
+for "_i" from 1 to 5 do {player addItemToVest "30Rnd_556x45_Stanag_red";};
+for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
 player addItemToVest "SmokeShellGreen";
+player addItemToVest "SmokeShellRed";
+player addItemToVest "9Rnd_45ACP_Mag";
+player addBackpack "tf_rt1523g_big_bwmod_tropen";
+player addItemToBackpack "ACE_ATragMX";
+player addItemToBackpack "ACE_Kestrel4500";
+player addItemToBackpack "ACE_microDAGR";
+player addItemToBackpack "ACE_RangeCard";
+player addItemToBackpack "ACE_Tripod";
+for "_i" from 1 to 5 do {player addItemToBackpack "ACE_7Rnd_408_305gr_Mag";};
 player addHeadgear "H_HelmetSpecB";
  
 
@@ -50,3 +52,5 @@ player linkItem "ItemGPS";
 player linkItem "NVGoggles_OPFOR";
  
 player setSpeaker "ACE_NoVoice";
+
+closeDialog 0;
