@@ -24,11 +24,6 @@ for "_i" from 1 to 2 do {player addItemToVest "SmokeShell";};
 player addItemToVest "SmokeShellGreen";
 player addItemToVest "SmokeShellRed";
 for "_i" from 1 to 4 do {player addItemToVest "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
-player addBackpack "everest_packNight";
-player addItemToBackpack "ACE_DefusalKit";
-player addItemToBackpack "ACE_Clacker";
-player addItemToBackpack "MineDetector";
-for "_i" from 1 to 4 do {player addItemToBackpack "rhsusf_m112_mag";};
 player addHeadgear "Night_ECH";
 
 player addWeapon "rhs_weap_hk416d145";
@@ -46,7 +41,6 @@ player linkItem "tf_anprc152";
 player linkItem "ItemGPS";
 player linkItem "NVGoggles_OPFOR";
 
-comment "Set identity";
 player setFace "WhiteHead_11";
 player setSpeaker "ace_novoice";
 [player,"Everest"] call BIS_fnc_setUnitInsignia;

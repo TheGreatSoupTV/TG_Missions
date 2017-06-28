@@ -23,12 +23,10 @@ for "_i" from 1 to 2 do {player addItemToVest "rhs_mag_m67";};
 for "_i" from 1 to 2 do {player addItemToVest "SmokeShell";};
 player addItemToVest "SmokeShellGreen";
 player addItemToVest "SmokeShellRed";
-for "_i" from 1 to 4 do {player addItemToVest "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
+for "_i" from 1 to 3 do {player addItemToVest "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
 player addBackpack "everest_packNight";
-player addItemToBackpack "ACE_DefusalKit";
-player addItemToBackpack "ACE_Clacker";
-player addItemToBackpack "MineDetector";
-for "_i" from 1 to 4 do {player addItemToBackpack "rhsusf_m112_mag";};
+for "_i" from 1 to 2 do {player addItemToBackpack "rhs_mag_smaw_HEAA";};
+player addItemToBackpack "rhs_mag_smaw_SR";
 player addHeadgear "Night_ECH";
 
 player addWeapon "rhs_weap_hk416d145";
@@ -36,6 +34,8 @@ player addPrimaryWeaponItem "rhsusf_acc_nt4_black";
 player addPrimaryWeaponItem "rhsusf_acc_anpeq15side_bk";
 player addPrimaryWeaponItem "rhsusf_acc_ACOG3_USMC";
 player addPrimaryWeaponItem "rhsusf_acc_grip1";
+player addWeapon "rhs_weap_smaw_green";
+player addSecondaryWeaponItem "rhs_weap_optic_smaw";
 player addWeapon "rhsusf_weap_glock17g4";
 player addWeapon "Binocular";
 
@@ -46,7 +46,6 @@ player linkItem "tf_anprc152";
 player linkItem "ItemGPS";
 player linkItem "NVGoggles_OPFOR";
 
-comment "Set identity";
 player setFace "WhiteHead_11";
 player setSpeaker "ace_novoice";
 [player,"Everest"] call BIS_fnc_setUnitInsignia;
