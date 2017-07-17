@@ -24,8 +24,8 @@ removeBackpack player;
 removeHeadgear player;
 removeGoggles player;
 
-player forceAddUniform "everestdesClothing";
-player addVest "desVest";
+player forceAddUniform "everestnightClothing";
+player addVest "nightVest";
 
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
@@ -34,4 +34,4 @@ player linkItem "tf_anprc152_9";
 player linkItem "ItemGPS";
 
 player setFace "WhiteHead_21";
-player setSpeaker "Male09ENG";
+player setSpeaker "ACE_NoVoice";
