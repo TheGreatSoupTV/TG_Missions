@@ -8,7 +8,11 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=195;
+		nextID=196;
+	};
+	class MarkerIDProvider
+	{
+		nextID=1;
 	};
 	class Camera
 	{
@@ -41,13 +45,14 @@ addons[]=
 	"ace_medical_menu",
 	"ace_explosives",
 	"ace_interaction",
-	"A3_Modules_F_Curator_Curator"
+	"A3_Modules_F_Curator_Curator",
+	"A3_Ui_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=19;
+		items=20;
 		class Item0
 		{
 			className="A3_Soft_F_Gamma";
@@ -181,12 +186,69 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item19
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 randomSeed=11745653;
 class ScenarioData
 {
 	author="Duke_of_Games_25 [TG] & JediNarwals [TG]";
+	respawnDialog=0;
+	respawn=3;
+	class Header
+	{
+		gameType="Coop";
+	};
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=1;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Counter";
+							};
+						};
+					};
+				};
+			};
+		};
+		nAttributes=1;
+	};
 };
 class Mission
 {
@@ -218,7 +280,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=66;
+		items=67;
 		class Item0
 		{
 			dataType="Object";
@@ -7694,7 +7756,7 @@ class Mission
 			name="GeorgeWashington";
 			id=190;
 			type="ModuleCurator_F";
-			atlOffset=1.3708594;
+			atlOffset=1.3709644;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -8235,6 +8297,15 @@ class Mission
 				};
 				nAttributes=5;
 			};
+		};
+		class Item66
+		{
+			dataType="Marker";
+			position[]={2305.6299,0,13201.03};
+			name="respawn_west";
+			type="Empty";
+			id=195;
+			atlOffset=-11.800976;
 		};
 	};
 };
