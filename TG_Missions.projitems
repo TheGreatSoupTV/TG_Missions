@@ -3787,6 +3787,7 @@
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_1stBattPractice.Tanoa\functions\fn_Dmarksman.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_1stBattPractice.Tanoa\functions\fn_Drifleman.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_1stBattPractice.Tanoa\functions\fn_fatigue.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_1stBattPractice.Tanoa\initServer.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_1stBattPractice.Tanoa\init.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_1stBattPractice.Tanoa\initPlayerLocal.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_1stBattPractice.Tanoa\mission.sqm" />
@@ -3887,6 +3888,7 @@
     <None Include="$(MSBuildThisFileDirectory)Tanoa\DEPRECATED\TG_Practice_Casual.Tanoa\module_chatIntercept\executeCommand.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\DEPRECATED\TG_Practice_Casual.Tanoa\module_chatIntercept\init.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_1stBattPractice.Tanoa\onplayerrespawn.sqf" />
+    <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_1stBattPractice.Tanoa\scripts\zuesUpdater.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_1stBattPractice.Tanoa\scripts\icons.sqf" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_1stBattPractice.Tanoa\taw_vd\CfgFunctions.hpp" />
     <None Include="$(MSBuildThisFileDirectory)Tanoa\TG_1stBattPractice.Tanoa\taw_vd\defines.h" />

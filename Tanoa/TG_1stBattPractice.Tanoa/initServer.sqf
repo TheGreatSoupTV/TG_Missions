@@ -1,0 +1,1 @@
+_update = execVM "scripts\zuesUpdater.sqf";
