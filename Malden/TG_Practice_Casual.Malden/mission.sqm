@@ -8,14 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=413;
+		nextID=414;
+	};
+	class MarkerIDProvider
+	{
+		nextID=1;
 	};
 	class Camera
 	{
-		pos[]={706.26843,53.93,12194.164};
-		dir[]={0.82274908,-0.45651957,-0.33868647};
-		up[]={0.42216149,0.8897078,-0.17378393};
-		aside[]={-0.38066739,1.3009412e-007,-0.92473024};
+		pos[]={726.04169,51.83041,12205.385};
+		dir[]={-0.12923023,-0.37923798,-0.91630536};
+		up[]={-0.052965298,0.92528808,-0.37555093};
+		aside[]={-0.99026769,-3.8676444e-007,0.13965975};
 	};
 };
 binarizationWanted=0;
@@ -96,13 +100,14 @@ addons[]=
 	"A3_Structures_F_EPB_Civ_Camping",
 	"A3_Structures_F_Mil_Shelters",
 	"A3_Structures_F_Mil_TentHangar",
-	"A3_Data_F_Exp_A_Virtual"
+	"A3_Data_F_Exp_A_Virtual",
+	"A3_Ui_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=71;
+		items=72;
 		class Item0
 		{
 			className="rhsusf_vehicles";
@@ -591,6 +596,13 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item71
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 randomSeed=4553675;
@@ -624,7 +636,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=188;
+		items=189;
 		class Item0
 		{
 			dataType="Object";
@@ -19241,6 +19253,16 @@ class Mission
 				};
 				nAttributes=5;
 			};
+		};
+		class Item188
+		{
+			dataType="Marker";
+			position[]={665.09698,0,12180.456};
+			name="Respawn_West";
+			type="Empty";
+			angle=269.17999;
+			id=413;
+			atlOffset=-28.92;
 		};
 	};
 };

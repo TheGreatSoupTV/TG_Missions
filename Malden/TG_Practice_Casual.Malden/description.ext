@@ -31,7 +31,7 @@ respawnTemplates[] = {"MenuPosition", "MenuInventory"};
 
 class CfgRespawnInventory
 {
-    #include "configs\spawnEquipment.hpp"
+	#include "configs\spawnEquipment.hpp"
 };
 class CfgRoles
 {
