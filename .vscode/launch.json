@@ -1,0 +1,11 @@
+{
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "type": "sqflint",
+                "request": "launch",
+                "name": "SQFLint",
+                "rptPath": "C:\\Users\\Code34\\AppData\\Local\\Arma 3"
+            }
+        ]
+}
