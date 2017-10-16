@@ -1,0 +1,1 @@
+[] spawn TG_fnc_SetupTent;

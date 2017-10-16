@@ -1,0 +1,33 @@
+author = Duke_of_Games_25 [TG], JediNarwals [TG];
+overviewText = "Tacticalgaming.net Arma Division 1st Battalion";
+onLoadName = Tactical Gaming Takistan Operations;
+
+respawn      = "BASE";
+respawndelay = 3;
+disabledAI   = 1;
+enableDebugConsole = 1;
+
+//----- For PvP ---------
+disableChannels[]={0};
+joinUnassigned = 1;
+
+corpseLimit = 30;
+corpseRemovalMinTime = 60;
+corpseRemovalMaxTime = 300;
+
+wreckLimit = 15;
+wreckRemovalMinTime = 60;
+wreckRemovalMaxTime = 1200;
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 149;
+};
+
+#include "taw_vd\GUI.h"									// TAW View Distance
+class CfgFunctions
+{
+	#include "taw_vd\CfgFunctions.hpp"					// View distance
+};
