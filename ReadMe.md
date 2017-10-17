@@ -6,7 +6,7 @@
     <a href="http://www.tacticalgaming.net/hq">
         <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=TacticalGaming" alt="TacticalGaming Website">
     </a>
-    <a href="https://discord.gg/Y9pG6t">
+    <a href="https://discord.gg/fny5MwP">
         <img src="https://img.shields.io/discord/194642877501014016.svg" alt="TacticalGaming Discord">
     </a>
 </p>
