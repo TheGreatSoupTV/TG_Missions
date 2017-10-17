@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://i.imgur.com/FiOox9O.png" width="480">
+    <img src="https://units.arma3.com/groups/img/6061/84l8cEeefO.jpg" width="960">
 </p>
 
 <p align="center">
