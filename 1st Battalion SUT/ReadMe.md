@@ -3,14 +3,11 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/JediNarwals/TG_Missions/issues">
-        <img src="https://img.shields.io/github/issues-raw/acemod/ACE3.svg?style=flat-square&label=Issues" alt="TG_Missions Issues">
-    </a>
     <a href="http://www.tacticalgaming.net/hq">
         <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=TacticalGaming" alt="TacticalGaming Website">
     </a>
     <a href="https://discord.gg/Y9pG6t">
-        <img src="https://img.shields.io/discord/102860784329052160.svg" alt="TacticalGaming Discord">
+        <img src="https://img.shields.io/discord/194642877501014016.svg" alt="TacticalGaming Discord">
     </a>
 </p>
 
