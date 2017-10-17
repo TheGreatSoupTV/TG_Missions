@@ -569,7 +569,7 @@ class AddonsMetaData
 randomSeed=14324578;
 class ScenarioData
 {
-	author="The Great Soup TV";
+	author="The Great Soup [TG], JediNarwals [TG]";
 	disabledAI=1;
 };
 class CustomAttributes
@@ -602,6 +602,8 @@ class Mission
 {
 	class Intel
 	{
+		briefingName="TacticalGaming.net/HQ Malden Operations";
+		overviewText="Tactical Gaming Malden Operations";
 		overviewText="MaldenPractice";
 		timeOfChanges=1800.0002;
 		startWeather=0;

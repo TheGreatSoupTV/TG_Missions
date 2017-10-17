@@ -244,6 +244,8 @@ class Mission
 {
 	class Intel
 	{
+		briefingName="TacticalGaming.net/HQ Malden Operations";
+		overviewText="Tactical Gaming Malden Operations";
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
 		startWind=0.1;

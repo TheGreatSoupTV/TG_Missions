@@ -205,12 +205,14 @@ class AddonsMetaData
 randomSeed=15630463;
 class ScenarioData
 {
-	author="TG Duke_of_Games_25";
+	author="Duke_of_Games_25 [TG], JediNarwals [TG]";
 };
 class Mission
 {
 	class Intel
 	{
+		briefingName="TacticalGaming.net/HQ Tanoa Operations";
+		overviewText="Tactical Gaming Tanoa Operations";
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
 		startWind=0.1;
