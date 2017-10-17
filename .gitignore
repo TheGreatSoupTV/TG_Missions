@@ -145,6 +145,11 @@ publish/
 # passwords
 #*.pubxml
 *.publishproj
+*.projitems
+*.shproj
+*.sln
+*.gitignore
+*.gitattributes
 
 # NuGet Packages
 *.nupkg
