@@ -19,4 +19,5 @@ For making a quick mission there a few key files you'll need to use in the file.
 If you're spawning onto a carrier I would suggest placing the blank "respawn_west" marker anywhere on the map then going into the mission.sqm and copy the same position as one of the units on the carrier as the position for the respawn_west marker.
 
 ## To-do
-    - Make/remake all missions with the new standard loadouts and modules.
+    - Make/remake all missions with the new standard modules.
+    - Make mission files for every map.
