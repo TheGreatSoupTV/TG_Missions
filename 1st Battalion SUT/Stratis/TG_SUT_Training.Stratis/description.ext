@@ -1,100 +1,34 @@
-//------------------------- On Load
+author = Duke_of_Games_25 [TG], JediNarwals [TG];
+overviewText = "Arma Division Divional Operations";
+onLoadName = Tactical Gaming Stratis Operations;
 
-author = Duke_of_Games and JediNarwals;		// Visible when loading mission
-onLoadName = "TG SUT 1st Bat. Training";					// Visible when loading mission
-OnLoadMission = "TG rules and regulations are in affect while this mission is active.";
-loadScreen = "images\loading.jpg";				// Visible when loading mission
-overviewPicture = "images\loading.jpg";			// Visible when selecting mission	
+respawn      = 			"BASE";
+respawndelay = 			3;
+respawnOnStart =		1;
+disabledAI   = 			1;
+enableDebugConsole = 	1;
 
-onLoadIntro = "";										// Displays a message while the intro is loading.
-onLoadIntroTime = 0;									// Time and date displayed while the intro loads. 1 visible, 0 hidden.
-onLoadMissionTime = 0;									// Time and date displayed while the mission loads. 1 visible, 0 hidden.
+//----- For PvP ---------
+disableChannels[]={0};
+joinUnassigned = 1;
 
-class Header 
-	{
-		gameType = COOP;								// Unknown, COOP, DM, TDM, CTF, SC, CTI, RPG, Sandbox, Seize, Defend.
-		minPlayers = 1;									// Min # of players the MISSION supports
-		maxPlayers = 50;								// Max # of players the MISSION supports, not server slots. Make sure # is greater than server slots.
-	}; 
+corpseLimit = 30;
+corpseRemovalMinTime = 60;
+corpseRemovalMaxTime = 300;
 
-//------------------------- Admin
+wreckLimit = 15;
+wreckRemovalMinTime = 60;
+wreckRemovalMaxTime = 1200;
 
-enableDebugConsole = 1;									// 0 = disabled. 1 = admins, 2 = everybody. 0 is recommended in MP.
-allowFunctionsLog = 0; 									// Log functions to .rpt. disabled with 0
+class Header
+{
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 149;
+};
 
-//------------------------- Respawn
-
-Respawn = 3;											// 0 = none. 1 = bird. 2 = instant where died. 3 = base or respawn_west marker. 4 = respawn with team, or bird. 5 = into AI or bird.
-RespawnDelay = 5;										// Delay prior to respawn, ensure longer than BTC revive delay.
-RespawnOnStart = 1;										// DEATH TO ALL HUMANS!!!
-respawnTemplates[] = {"MenuPosition", "MenuInventory"};
-
-//------------------------- Misc
-
-disableChannels[] = {0,1,2,4,6};							// 0 = Global, 1 = Side, 2 = Command, 3 = Group, 4 = Vehicle, 5 = Direct, 6 = System. Admin/server/BattlEye can still use Global. 
-disabledAI = 1;											// No AI in playable units
-aiKills = 0; 											// disable scorelist for AI players
-joinUnassigned = 0;										// 0 = players forced into role on joinlated.
-
-//------------------------- Includes / Functions
-
-#include "outlw_magRepack\MagRepack_config.hpp"			// Outlaw Mag repack
+#include "taw_vd\GUI.h"									// TAW View Distance
 class CfgFunctions
 {
-	class JN
-	{
-		tag = "jedi";
-		class general
-		{
-			file = "functions";
-			class vMonitor {};
-		};
-		class uniforms
-		{
-			file = "functions";
-			class rifleman {};
-			class AT {};
-			class AR {};
-			class CLS {};
-			class marksman {};
-			class Engineer {};
-			class Grenadier {};
-			class riflemanAT {};
-			class keyDownHandler {};
-		};
-	};
+	#include "taw_vd\CfgFunctions.hpp"					// View distance
 };
-//------------------------- PARAMs
-
-class Params
-{
-	class Title1
-	{
-		title = "~~~~ Paramiters ~~~~";
-		value[] = {0};
-		text[] = {""};
-		default = 0;
-	};
-		class VehicleRespawnDistance 
-		{
-			title = "Distance from players that vehicles won't respawn";
-			values[] = {10,50,100,200,300,400,500,1000,2000,5000,10000};
-			texts[] = {"10m","50m","100m","200m","300m","400m","500m","1km","2km","5km","10km"};
-			default = 50;
-		};
-};
-
-//------------------------ Credits
-/*
-Authors: 
-
-	Duke_of_Games, JediNarwals
-  
-  Please ask before using any of our missions. To learn more about TacticalGaming and what we are about find us online at http://www.tacticalgaiming.net/hq
-  
-	Please be respectful and do not remove/alter credits.
-	
-File Reference: 
-
-	https://community.bistudio.com/wiki/Description.ext
-*/
