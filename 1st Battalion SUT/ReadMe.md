@@ -1,14 +1,16 @@
 ﻿<p align="center">
+  <a href="http://www.tacticalgaming.net/hq/topic/106714-everest-platoon-discussion-and-news-channel/">
     <img src="https://i.imgur.com/IQRXLsJ.png" width="240">
+  </a>
 </p>
 
 <p align="center">
-    <a href="http://www.tacticalgaming.net/hq">
-        <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=TacticalGaming" alt="TacticalGaming Website">
-    </a>
-    <a href="https://discord.gg/fny5MwP">
-        <img src="https://img.shields.io/discord/194642877501014016.svg" alt="TacticalGaming Discord">
-    </a>
+  <a href="http://www.tacticalgaming.net/hq">
+      <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=TacticalGaming" alt="TacticalGaming Website">
+  </a>
+  <a href="https://discord.gg/fny5MwP">
+      <img src="https://img.shields.io/discord/194642877501014016.svg" alt="TacticalGaming Discord">
+  </a>
 </p>
 
 Welcome to the TacticalGaming 1st Battalion SUT section. This section includes files from the 1st Battalion's game servers for all operations. Please ask for permission before use of our file. Thank you.
