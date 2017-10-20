@@ -1,4 +1,4 @@
-version=52;
+version=53;
 class EditorData
 {
 	moveGridStep=1;
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={11622.339,54.742775,11889.688};
-		dir[]={-0.18720901,-0.43603644,0.88037884};
-		up[]={-0.090734437,0.89973253,0.42671436};
-		aside[]={0.9782722,-5.6123827e-007,0.20802215};
+		pos[]={11573.643,28.851656,11967.568};
+		dir[]={-0.41348752,-0.54502636,-0.72953451};
+		up[]={-0.26883748,0.83820534,-0.47431228};
+		aside[]={-0.87010562,-3.8366124e-007,0.4931643};
 	};
 };
 binarizationWanted=0;
@@ -59,119 +59,119 @@ class AddonsMetaData
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item1
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item2
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item3
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item4
 		{
 			className="A3_Structures_F_EPC";
 			name="Arma 3 Win Episode - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item5
 		{
 			className="A3_Signs_F";
 			name="Arma 3 - Signs";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item6
 		{
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item7
 		{
 			className="A3_Soft_F";
 			name="Arma 3 Alpha - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item8
 		{
 			className="A3_Air_F_Beta";
-			name="Arma 3 Beta - Aircrafts";
+			name="Arma 3 Beta - Aircraft";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item9
 		{
 			className="A3_Air_F_Heli";
-			name="Arma 3 Helicopters - Aircrafts";
+			name="Arma 3 Helicopters - Aircraft";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item10
 		{
 			className="A3_Air_F_Exp";
-			name="Arma 3 Apex - Aircrafts";
+			name="Arma 3 Apex - Aircraft";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item11
 		{
 			className="A3_Armor_F_Beta";
 			name="Arma 3 Beta - Armored Land Vehicles";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item12
 		{
 			className="A3_Air_F";
-			name="Arma 3 Alpha - Aircrafts";
+			name="Arma 3 Alpha - Aircraft";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item13
 		{
 			className="A3_Misc_F";
 			name="Arma 3 - 3D Aids and Helpers";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item14
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item15
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item16
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -1737,22 +1737,24 @@ class Mission
 			};
 			id=105;
 			type="Land_CampingTable_F";
+			atlOffset=0.24148178;
 		};
 		class Item76
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11571.197,24.140554,11961.456};
+				position[]={11571.197,24.140711,11961.456};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="this addAction['Configure Compass',{player execVM 'scripts\compass.sqf'}];";
 			};
 			id=112;
 			type="Land_Campfire_F";
-			atlOffset=0.24784279;
+			atlOffset=0.00015258789;
 		};
 		class Item77
 		{
@@ -2224,7 +2226,7 @@ class Mission
 			};
 			id=143;
 			type="B_Heli_Transport_01_F";
-			atlOffset=-1.9073486e-006;
+			atlOffset=-1.5258789e-005;
 		};
 		class Item106
 		{
@@ -2260,6 +2262,7 @@ class Mission
 			};
 			id=145;
 			type="B_T_VTOL_01_vehicle_F";
+			atlOffset=0.15839386;
 		};
 		class Item108
 		{
@@ -2277,7 +2280,7 @@ class Mission
 			};
 			id=146;
 			type="B_T_VTOL_01_infantry_F";
-			atlOffset=-0.0041332245;
+			atlOffset=0.15447617;
 		};
 		class Item109
 		{
@@ -2348,7 +2351,7 @@ class Mission
 			};
 			id=155;
 			type="B_Heli_Light_01_F";
-			atlOffset=-3.8146973e-006;
+			atlOffset=-0.37890625;
 		};
 		class Item113
 		{
@@ -2366,7 +2369,7 @@ class Mission
 			};
 			id=156;
 			type="B_Heli_Light_01_F";
-			atlOffset=-0.00036621094;
+			atlOffset=-0.37962914;
 		};
 		class Item114
 		{
@@ -2478,7 +2481,6 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=164;
 			type="Sign_Arrow_Direction_Yellow_F";
@@ -2495,7 +2497,6 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=165;
 			type="Sign_Arrow_Direction_Yellow_F";
@@ -2512,7 +2513,6 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=166;
 			type="Sign_Arrow_Direction_Yellow_F";
@@ -2529,7 +2529,6 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=167;
 			type="Sign_Arrow_Direction_Yellow_F";
@@ -2546,7 +2545,6 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=168;
 			type="Sign_Arrow_Direction_Yellow_F";
@@ -2563,7 +2561,6 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=169;
 			type="Sign_Arrow_Direction_Yellow_F";
@@ -2580,7 +2577,6 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=170;
 			type="Sign_Arrow_Direction_Yellow_F";
@@ -2597,7 +2593,6 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=171;
 			type="Sign_Arrow_Direction_Yellow_F";
@@ -2614,7 +2609,6 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=172;
 			type="Sign_Arrow_Direction_Yellow_F";
