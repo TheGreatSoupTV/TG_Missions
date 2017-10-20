@@ -80,7 +80,6 @@ _use_html_load_on_adminmenu = false;		/* default and recommended is TRUE. infiST
 		76561198012590280 ~ JediNarwals		DEV
 		76561198073657954 ~ Duke_of_Games
 		76561198142808459 ~ TG Louie G
-		76561198014933275 ~ TGxSole
 		76561198022394569 ~ TG_Nazman
 		76561198037805024 ~ Diggi19_23
 		76561197960385979 ~ BayCat
@@ -89,14 +88,15 @@ _use_html_load_on_adminmenu = false;		/* default and recommended is TRUE. infiST
 		76561198031283177 ~ Muffin
 		76561198045961511 ~ rustymonk
 		76561198103704058 ~ Everest78
-		76561198195361963 ~ Bornasm			DEV
-		76561198143612172 ~ Tombstone
 		76561198179734481 ~ Sullivan
+		76561198057700889 ~ DocShadow
+		76561198077924551 ~ FrankTheTank
+		76561198023353813 ~ TheGreatSoup
 */
 _adminUIDandAccess =
 [
 	[
-		['76561198012590280','76561198073657954','76561198142808459','76561198014933275','76561198008589356','76561198119321587','76561198031283177','76561198195361963','76561198143612172','76561198179734481','...'],	// Admins with UIDs in this Array have their Access defined in the array below.
+		['76561198012590280','76561198073657954','76561198142808459','76561198008589356','76561198119321587','76561198031283177','76561198179734481','76561198057700889','76561198077924551','76561198023353813','...'],	// Admins with UIDs in this Array have their Access defined in the array below.
 		[
 			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
 			'spectating','AdminConsole','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','UpgradeBuilding','ShowGear',
@@ -120,7 +120,7 @@ _adminUIDandAccess =
 		]
 	],
 	[
-		['76561198012590280','76561198073657954','76561198142808459','76561198014933275','76561198008589356','76561198119321587','76561198031283177','76561198195361963','76561198143612172','76561198179734481','...'],	// Admins with UIDs in this Array have their Access defined in the array below.
+		['76561198012590280','76561198073657954','76561198142808459','76561198008589356','76561198119321587','76561198031283177','76561198179734481','76561198057700889','76561198077924551','76561198023353813','...'],	// Admins with UIDs in this Array have their Access defined in the array below.
 		[
 			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
 			'spectating','AdminConsole','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','UpgradeBuilding','ShowGear',
@@ -144,7 +144,7 @@ _adminUIDandAccess =
 		]
 	],
 	[
-		['76561198012590280','76561198073657954','76561198142808459','76561198022394569','76561198037805024','76561198014933275','76561197960385979','76561197960385979','76561198045961511','76561198103704058','76561198195361963','76561198143612172','76561198179734481','...'],	// Admins with UIDs in this Array have their Access defined in the array below.
+		['76561198012590280','76561198073657954','76561198142808459','76561198022394569','76561198037805024','76561197960385979','76561197960385979','76561198045961511','76561198103704058','76561198179734481','76561198057700889','76561198077924551','76561198023353813','...'],	// Admins with UIDs in this Array have their Access defined in the array below.
 		[
 			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
 			'spectating','AdminConsole','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','UpgradeBuilding','ShowGear',
