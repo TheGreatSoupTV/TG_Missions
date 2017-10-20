@@ -1,14 +1,14 @@
 /*
-| Author: 
+| Author:
 |
 |	JediNarwals [TG]
 |_____
 |
-| Description: 
-|	
-|	Last modified:3/4/2017.
+| Description:
+|
+|	Last modified:20/10/2017.
 |	You may use and edit the code.
-|	You may not remove any entries from Credits without first removing the relevant author's contributions, 
+|	You may not remove any entries from Credits without first removing the relevant author's contributions,
 |	or asking permission from the mission authors/contributors.
 |	You may not remove the Credits tab, without consent of Ahoy World
 | 	Feel free to re-format or make it look better.
@@ -21,7 +21,6 @@ waitUntil {!isNull player};
 player createDiarySubject ["rules", "Rules"];
 player createDiarySubject ["mods", "Mods"];
 player createDiarySubject ["teamspeak", "Teamspeak"];
-player createDiarySubject ["staff","Meet the Staff"];
 player createDiarySubject ["faq", "FAQ"];
 
 //-------------------------------------------------- Rules
@@ -36,15 +35,15 @@ player createDiaryRecord ["rules",
 <br />
 <br />Guideline for enforcement:
 <br />
-<br />-	Innocent rule violation and disruptive behavior: 
+<br />-	Innocent rule violation and disruptive behavior:
 <br />
 <br />		= Verbal / Written request to cease, or warning.
-<br /> 
+<br />
 <br />-	Minor or first-time rule violation:
 <br />
 <br />		= Kick, or 0 - 3 day ban.
 <br />
-<br />-	Serious or repetitive rule violation: 
+<br />-	Serious or repetitive rule violation:
 <br />
 <br />		= 3 - 7 day ban.
 <br />
@@ -65,7 +64,7 @@ player createDiaryRecord ["rules",
 <br />2. Intentional team-killing will not be tolerated.
 <br />3. Excessive, unintentional team-killing may result in a Kick/Temp ban.
 <br />4. Unnecessary destruction of BLUFOR vehicles will not be tolerated.
-<br />5. Verbal abuse and bullying will not be tolerated. 
+<br />5. Verbal abuse and bullying will not be tolerated.
 <br />6. Firing a weapon on base--unless at an enemy--may result in a Kick/Temp ban.
 <br />7. Griefing and obstructive play will not be tolerated.
 <br />8. Excessive mic spamming, especially of Side and Global channels, will not be tolerated.
@@ -120,39 +119,6 @@ player createDiaryRecord ["teamspeak",
 "
 ]];
 
-//-------------------------------------------------- Staff
-
-player createDiaryRecord ["staff",
-[
-"Meet the Staff",
-"
-<br /><font size='16'>Welcome to the TacticalGaming.net Public Server. Below are a list of the staff members that help run the server.
-<br /> Treat them with respect and they will allways do the same. Their word is final. Failure to comply will result in a Kick/Ban.</font></ br>
-<br /> 
-<br /><font size='16'>Brigade Staff:</font>
-<br /> TG Louie G [EU]
-<br /> TGxSole [EU]
-<br />
-<br /><font size='16'>Battalion Staff:</font>
-<br /> TG Nimitz [EU]
-<br /> TG Duke_of_Games [US]
-<br /> TG JediNarwals [US] [DEV]
-<br /> TG BayCat [EU]
-<br /> 
-<br /><font size='16'>Squad Leaders:</font>
-<br /> TG Mozart [EU]
-<br /> TG Nazman [EU]
-<br /> TG Tombstone [AU/US]
-<br /> TG Hermano [EU]
-<br />
-<br /><font size='16'>Squad Assistants:</font>
-<br /> TG Sunscreen [EU]
-<br /> TG Everest78 [EU]
-<br /> TG Tiger [EU]
-<br /> TG SullivanWorks [US]
-"
-]];
-
 //-------------------------------------------------- FAQ
 
 player createDiaryRecord ["faq",
@@ -160,7 +126,7 @@ player createDiaryRecord ["faq",
 "Squads",
 "
 <br /><font size='16'>Q:</font> How do I join a squad?<br />
-<br /><font size='16'>A:</font> 
+<br /><font size='16'>A:</font>
 <br /> 1. Press 'U'.
 <br /> 2. A dialoge will pop up and will allow for you to join groups in there!
 "
@@ -179,7 +145,7 @@ player createDiaryRecord ["faq",
 [
 "Earplugs",
 "
-<br />Using earplugs is up to you! 
+<br />Using earplugs is up to you!
 <br />By setting 'Custom Action 10' you can easily reduce the sound of your game until you push that button again.
 <br />
 <br />(I use Left Windows key)
