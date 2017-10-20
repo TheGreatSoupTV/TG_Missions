@@ -21,42 +21,42 @@ _settings = player execVM "init\player.sqf"; waitUntil {scriptDone _settings };
 */
 TG_ID_PlayerTags = ["TG_PlayerTags","onEachFrame",
 	{
-		{ 
-			if (cursorObject == _x) then 
-			{ 
+		{
+			if (cursorObject == _x) then
+			{
 			drawIcon3D
-				[   
-					"",   
-					[1, 1, 1, 0.8],    
-					[visiblePosition _x select 0, visiblePosition _x select 1,(visiblePosition _x select 2)+2.2],    
-					0.83333,    
-					0.83333,    
-					0,    
-					(format [name _x]),    
-					2,    
-					0.0416665,    
-					"RobotoCondensed"  
-				]; 
-			}; 
-		} foreach playableUnits; 
-			{   
-				if ((side _x == west) && (_x != player) && ((player distance _x) < 15)) then   
-			{   
-			drawIcon3D 
-				[   
-					"",   
-					[1, 1, 1, 0.8],    
-					[visiblePosition _x select 0, visiblePosition _x select 1,(visiblePosition _x select 2)+2.2],    
-					0.83333,    
-					0.83333,    
-					0,    
-					(format [name _x]),    
-					2,    
-					0.0416665,    
-					"RobotoCondensed"  
-				]; 
-			};   
-		} foreach playableUnits;   
+				[
+					"",
+					[1, 1, 1, 0.8],
+					[visiblePosition _x select 0, visiblePosition _x select 1,(visiblePosition _x select 2)+2.2],
+					0.83333,
+					0.83333,
+					0,
+					(format [name _x]),
+					2,
+					0.0416665,
+					"RobotoCondensed"
+				];
+			};
+		} foreach playableUnits;
+			{
+				if ((side _x == west) && (_x != player) && ((player distance _x) < 15)) then
+			{
+			drawIcon3D
+				[
+					"",
+					[1, 1, 1, 0.8],
+					[visiblePosition _x select 0, visiblePosition _x select 1,(visiblePosition _x select 2)+2.2],
+					0.83333,
+					0.83333,
+					0,
+					(format [name _x]),
+					2,
+					0.0416665,
+					"RobotoCondensed"
+				];
+			};
+		} foreach playableUnits;
 	}
 ] call BIS_fnc_addStackedEventHandler;
 
@@ -100,4 +100,3 @@ TG_ID_PlayerTags = ["TG_PlayerTags","onEachFrame",
 		};
 	};
 };
-

@@ -6,7 +6,7 @@
 		Calls on player respawn.
 */
 
-player switchCamera "EXTERNAL";
+//player switchCamera "EXTERNAL";
 enableRadio false;														// That will clear the voices from my head...
 enableSentences false;													// Stop talking to myself
 enableSaving [false,false];												// "Everything Not saved will be lost." - Nintendo 'Quit Screen' message
