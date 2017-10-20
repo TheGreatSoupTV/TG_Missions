@@ -1,6 +1,8 @@
 ﻿<p align="center">
   <a href="http://www.tacticalgaming.net/hq/topic/106655-sherwood-platoon-discussion-and-news-channel/">
+    <img src="https://i.imgur.com/55kPaoX.png" width="240">
     <img src="https://i.imgur.com/nQrW9SU.png" width="240">
+    <img src="https://i.imgur.com/rBt8q0w.png" width="240">
   </a>
 </p>
 
