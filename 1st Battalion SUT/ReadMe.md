@@ -1,8 +1,8 @@
 ﻿<p align="center">
   <a href="http://www.tacticalgaming.net/hq/topic/106714-everest-platoon-discussion-and-news-channel/">
-    <img src="https://i.imgur.com/yAsqmlB.png" width="240">
+    <img src="https://i.imgur.com/yAsqmlB.png" width="200">
     <img src="https://i.imgur.com/IQRXLsJ.png" width="240">
-    <img src="https://i.imgur.com/IYcbGL4.png" width="240">
+    <img src="https://i.imgur.com/IYcbGL4.png" width="200">
   </a>
 </p>
 
