@@ -9,7 +9,7 @@ author = "JediNarwals [TG] & Duke_of_Games_25 [TG]";
 overviewText = "Be part of the community at http://www.tacticalgaming.net/hq";
 OnLoadName = "TacticalGaming Public Operations";
 OnLoadMission = "Be part of the community at http://www.tacticalgaming.net/hq";
-loadScreen = "images\loadingScreen.jpg";
+loadScreen = "loadingScreen.jpg";
 //overviewPicture = "images\loadingScreen.jpg";
 
 //=================== Random Configs
