@@ -10,7 +10,7 @@ overviewText = "Be part of the community at http://www.tacticalgaming.net/hq";
 OnLoadName = "TacticalGaming Public Operations";
 OnLoadMission = "Be part of the community at http://www.tacticalgaming.net/hq";
 loadScreen = "loadingScreen.jpg";
-//overviewPicture = "images\loadingScreen.jpg";
+overviewPicture = "loadingScreen.jpg";
 
 //=================== Random Configs
 disabledAI = 1;												// Put AI in slots of players. 1 = Disabled, 0 = Enabled
