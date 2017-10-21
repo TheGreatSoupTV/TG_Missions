@@ -4,7 +4,7 @@
 	Description:
 					Adds a limited Arsenal to an object. You pre-define the objects.
 */
-_crate = _this select 0;
+_crate = _this;
 ["AmmoboxInit",[_crate,false,{true}]] spawn BIS_fnc_arsenal;
 
 //Lists of items to include
@@ -118,7 +118,8 @@ _availableVests = [
 
 _availableBackpacks = [
 	"everest_packDesert",
-	"everest_packNight"
+	"everest_packNight",
+	"tf_rt1523g_big_bwmod"
 ];
 
 _nvgoggles = [
@@ -127,7 +128,7 @@ _nvgoggles = [
 
 _gunz = [
 	"rhs_weap_hk416d145",
-    "rhs_weap_m249_pip_L_vfg",
+  "rhs_weap_m249_pip_L_vfg",
 	"rhs_weap_sr25",
 	"ACE_VMH3",
 	"rhsusf_weap_glock17g4"
@@ -148,7 +149,7 @@ _miscshit = [
 	"ItemGPS",
 	"ItemRadio",
 	"ItemMap",
-	"ACE_Altimeter"
+	"ACE_Altimeter",
 	"Binocular",
 	"B_UavTerminal",
 	"tf_anprc152",
