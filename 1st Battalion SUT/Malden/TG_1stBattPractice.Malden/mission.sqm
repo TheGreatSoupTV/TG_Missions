@@ -604,7 +604,6 @@ class Mission
 	{
 		briefingName="TacticalGaming.net/HQ Malden Operations";
 		overviewText="Tactical Gaming Malden Operations";
-		overviewText="MaldenPractice";
 		timeOfChanges=1800.0002;
 		startWeather=0;
 		startWind=0.1;
