@@ -129,9 +129,14 @@ _nvgoggles = [
 _gunz = [
 	"rhs_weap_hk416d145",
   "rhs_weap_m249_pip_L_vfg",
+	"rhs_weap_m240G",
 	"rhs_weap_sr25",
 	"ACE_VMH3",
-	"rhsusf_weap_glock17g4"
+	"rhsusf_weap_glock17g4",
+	"rhs_weap_m4a1_blockII_M203_bk",
+	"rhs_weap_fim92",
+	"rhs_weap_smaw_green",
+	"rhs_weap_M136"
 ];
 _mainattachments = [
 	"rhsusf_acc_ACOG_RMR",
@@ -141,7 +146,9 @@ _mainattachments = [
 	"rhsusf_acc_eotech_552",
 	"rhsusf_acc_g33_xps3",
 	"rhsusf_acc_SR25S",
-	"bipod_01_F_blk"
+	"bipod_01_F_blk",
+	"optic_MRCO",
+	"rhs_weap_optic_smaw"
 ];
 _miscshit = [
 	"ItemWatch",
@@ -158,7 +165,8 @@ _miscshit = [
 	"ACE_elasticBandage",
 	"ACE_morphine",
 	"ACE_Flashlight_XL50",
-	"ACE_CableTie"
+	"ACE_CableTie",
+	"ACE_MapTools"
 ];
 _magazines = [
 	"rhs_mag_m67",
@@ -171,7 +179,15 @@ _magazines = [
 	"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
 	"rhsusf_mag_17Rnd_9x19_FMJ",
 	"rhsusf_20Rnd_762x51_m118_special_Mag",
-	"rhsusf_m112_mag"
+	"rhsusf_m112_mag",
+	"rhs_mag_M433_HEDP",
+	"rhs_mag_m714_White",
+	"rhs_mag_m713_Red",
+	"rhs_mag_m715_Green",
+	"UGL_FlareWhite_F",
+	"rhs_fim92_mag",
+	"rhs_mag_smaw_HEAA",
+	"rhs_mag_smaw_SR"
 ];
 //Populate with predefined items and whatever is already in the crate
 [_crate,((backpackCargo _crate) + _availableBackpacks)] call BIS_fnc_addVirtualBackpackCargo;
