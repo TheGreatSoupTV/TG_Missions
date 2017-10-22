@@ -20,6 +20,8 @@ If you have any questions you can visit us at http://www.tacticalgaming.net/hq f
 
 For making a quick mission there a few key files you'll need to use in the file. Take the "Use_this_shit.zip" file and extract it into your mission. Make sure you take the modules from an existing mission file that is used and place it onto the map. Also make sure that there are play slots to spawn onto.
 
+If you are suggesting a mission to be made for the 1st Battalion practices there are a few things to help with proposing a new mission. When making the mission file do not add any respawn module or any extra modules. This will help the server adminitrator with verifying the file to ensure its integrety. The only file that should be submitted/proposed is the 'mission.sqm' and should be zipped into a folder labeled 'TG_1stBattPractice.WORLDNAME'(WORLDNAME is the name of the map it is on so it can be loaded in-game). The server administrator will add all other required files.
+
 If you're spawning onto a carrier I would suggest placing the blank "respawn_west" marker anywhere on the map then going into the mission.sqm and copy the same position as one of the units on the carrier as the position for the respawn_west marker.
 
 ## To-do
