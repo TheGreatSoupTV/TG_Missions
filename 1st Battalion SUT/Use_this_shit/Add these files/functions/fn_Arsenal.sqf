@@ -124,7 +124,8 @@ _availableBackpacks = [
 ];
 
 _nvgoggles = [
-	"NVGoggles_OPFOR"
+	"NVGoggles_OPFOR",
+	"rhsusf_ANPVS_14"
 ];
 
 _gunz = [
@@ -191,7 +192,9 @@ _magazines = [
 	"rhs_mag_smaw_SR",
 	"SatchelCharge_Remote_Mag",
 	"DemoCharge_Remote_Mag",
-	"ACE_M26_Clacker"
+	"ACE_M26_Clacker",
+	"B_IR_Grenade",
+	"rhs_mag_mk84"
 ];
 //Populate with predefined items and whatever is already in the crate
 [_crate,((backpackCargo _crate) + _availableBackpacks)] call BIS_fnc_addVirtualBackpackCargo;
