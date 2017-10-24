@@ -18,6 +18,8 @@ player addItemToUniform "ACE_MapTools";
 player addItemToUniform "rhsusf_acc_eotech_552";
 player addItemToUniform "ACE_VMH3";
 player addItemToUniform "ACE_M26_Clacker";
+player addItemToUniform "ACE_IR_Strobe_Item";
+player addItemToUniform "B_IR_Grenade";
 for "_i" from 1 to 2 do {player addItemToUniform "ACE_CableTie";};
 for "_i" from 1 to 2 do {player addItemToUniform "rhsusf_mag_17Rnd_9x19_FMJ";};
 player addVest "Scorpion_Vest_7";

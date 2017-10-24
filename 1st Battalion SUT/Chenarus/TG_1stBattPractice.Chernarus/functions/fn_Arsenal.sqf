@@ -12,7 +12,8 @@ _availableHeadgear = [
 	"Desert_ECH",
 	"Night_ECH",
 	"MCB_Boonie",
-	"Scorpion_Boonie"
+	"Scorpion_Boonie",
+	"rhsusf_cvc_green_alt_helmet"
 ];
 
 _availableGoggles = [
@@ -123,7 +124,8 @@ _availableBackpacks = [
 ];
 
 _nvgoggles = [
-	"NVGoggles_OPFOR"
+	"NVGoggles_OPFOR",
+	"rhsusf_ANPVS_14"
 ];
 
 _gunz = [
@@ -187,7 +189,13 @@ _magazines = [
 	"UGL_FlareWhite_F",
 	"rhs_fim92_mag",
 	"rhs_mag_smaw_HEAA",
-	"rhs_mag_smaw_SR"
+	"rhs_mag_smaw_SR",
+	"SatchelCharge_Remote_Mag",
+	"DemoCharge_Remote_Mag",
+	"ACE_M26_Clacker",
+	"B_IR_Grenade",
+	"ACE_IR_Strobe_Item",
+	"rhs_mag_mk84"
 ];
 //Populate with predefined items and whatever is already in the crate
 [_crate,((backpackCargo _crate) + _availableBackpacks)] call BIS_fnc_addVirtualBackpackCargo;
