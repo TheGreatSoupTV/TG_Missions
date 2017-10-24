@@ -194,6 +194,7 @@ _magazines = [
 	"DemoCharge_Remote_Mag",
 	"ACE_M26_Clacker",
 	"B_IR_Grenade",
+	"ACE_IR_Strobe_Item",
 	"rhs_mag_mk84"
 ];
 //Populate with predefined items and whatever is already in the crate
