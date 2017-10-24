@@ -167,9 +167,7 @@ _miscshit = [
 	"ACE_morphine",
 	"ACE_Flashlight_XL50",
 	"ACE_CableTie",
-	"ACE_MapTools",
-	"DemoCharge_Remote_Mag",
-	"ACE_M26_Clacker"
+	"ACE_MapTools"
 ];
 _magazines = [
 	"rhs_mag_m67",
@@ -190,7 +188,10 @@ _magazines = [
 	"UGL_FlareWhite_F",
 	"rhs_fim92_mag",
 	"rhs_mag_smaw_HEAA",
-	"rhs_mag_smaw_SR"
+	"rhs_mag_smaw_SR",
+	"SatchelCharge_Remote_Mag",
+	"DemoCharge_Remote_Mag",
+	"ACE_M26_Clacker"
 ];
 //Populate with predefined items and whatever is already in the crate
 [_crate,((backpackCargo _crate) + _availableBackpacks)] call BIS_fnc_addVirtualBackpackCargo;
