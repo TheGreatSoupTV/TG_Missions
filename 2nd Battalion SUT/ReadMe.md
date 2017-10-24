@@ -20,6 +20,4 @@ If you have any questions you can visit us at http://www.tacticalgaming.net/hq f
 
 
 ## To-do
-    - Fix experimental loadouts
-    - Hide headgear VA
-    - Restructure ACE Medical system for Advanced Operations
+    - Restructure ACE Medical system for Advanced Operations (On Hold)
