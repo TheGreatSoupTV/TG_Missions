@@ -12,7 +12,8 @@ _availableHeadgear = [
 	"Desert_ECH",
 	"Night_ECH",
 	"MCB_Boonie",
-	"Scorpion_Boonie"
+	"Scorpion_Boonie",
+	"rhsusf_cvc_green_alt_helmet"
 ];
 
 _availableGoggles = [
@@ -166,7 +167,9 @@ _miscshit = [
 	"ACE_morphine",
 	"ACE_Flashlight_XL50",
 	"ACE_CableTie",
-	"ACE_MapTools"
+	"ACE_MapTools",
+	"DemoCharge_Remote_Mag",
+	"ACE_M26_Clacker"
 ];
 _magazines = [
 	"rhs_mag_m67",
