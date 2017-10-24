@@ -17,6 +17,7 @@ player addItemToUniform "ACE_Flashlight_XL50";
 player addItemToUniform "ACE_MapTools";
 player addItemToUniform "rhsusf_acc_eotech_552";
 player addItemToUniform "ACE_VMH3";
+player addItemToUniform "ACE_M26_Clacker";
 for "_i" from 1 to 2 do {player addItemToUniform "ACE_CableTie";};
 for "_i" from 1 to 2 do {player addItemToUniform "rhsusf_mag_17Rnd_9x19_FMJ";};
 player addVest "Scorpion_Vest_7";
@@ -28,8 +29,7 @@ player addItemToVest "SmokeShellRed";
 for "_i" from 1 to 4 do {player addItemToVest "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
 player addBackpack "everest_packDesert";
 player addItemToBackpack "ACE_DefusalKit";
-player addItemToBackpack "ACE_Clacker";
-for "_i" from 1 to 4 do {player addItemToBackpack "rhsusf_m112_mag";};
+for "_i" from 1 to 4 do {this addItemToBackpack "DemoCharge_Remote_Mag";};
 player addHeadgear "Desert_ECH";
 
 player addWeapon "rhs_weap_m4a1_blockII_bk";
