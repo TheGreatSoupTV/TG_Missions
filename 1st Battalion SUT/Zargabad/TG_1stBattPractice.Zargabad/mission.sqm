@@ -16,11 +16,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=30;
+		nextID=36;
 	};
 	class Camera
 	{
-		pos[]={4885.2676,104.54476,636.51825};
+		pos[]={4874.7456,129.82318,614.63892};
 		dir[]={-0.74578077,-0.56573093,-0.35209826};
 		up[]={-0.51159406,0.82456237,-0.24153236};
 		aside[]={-0.42696789,6.7870133e-007,0.90437442};
@@ -602,25 +602,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -638,7 +619,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -657,57 +638,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
-						{
-							property="Enh_ambientAnimParams";
-							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"ARRAY"
-										};
-									};
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="";
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="ASIS";
-											};
-										};
-									};
-								};
-							};
-						};
-						nAttributes=4;
+						nAttributes=2;
 					};
 				};
 			};
@@ -10456,29 +10387,6 @@ class Mission
 					};
 					id=153;
 					type="Land_i_Barracks_V2_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0";
-								};
-							};
-						};
-						nAttributes=1;
-					};
 				};
 				class Item22
 				{
@@ -14715,6 +14623,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""rhs_weap_m4_carryhandle""],[2]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc"",""APERSMineDispenser_Mag"",""Chemlight_green"",""ACE_Chemlight_HiWhite"",""DemoCharge_Remote_Mag"",""rhsusf_m112x4_mag"",""rhsusf_mine_m14_mag"",""ATMine_Range_Mag"",""SatchelCharge_Remote_Mag"",""rhs_mine_M19_mag"",""APERSBoundingMine_Range_Mag"",""SLAMDirectionalMine_Wire_Mag"",""rhs_mag_mk84"",""IEDUrbanSmall_Remote_Mag""],[10,2,2,4,4,15,12,15,5,5,5,10,10,20,15,20,10]],[[""Rangefinder"",""ToolKit"",""ACE_elasticBandage"",""ACE_RangeCard"",""ItemcTab"",""ACE_wirecutter"",""ACE_M26_Clacker"",""ACE_Clacker""],[1,1,20,1,1,1,2,2]],[[""rhsusf_falconii""],[1]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="VehicleCustomization";
 					expression="if (local _this) then {if (isSimpleObject _this) then {_this setVariable ['VehicleCustomization',_value]} else {([_this] + _value) call (uinamespace getvariable 'bis_fnc_initVehicle');};};";
 					class Value
@@ -14821,45 +14748,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
-				{
-					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""rhs_weap_m4_carryhandle""],[2]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc"",""APERSMineDispenser_Mag"",""Chemlight_green"",""ACE_Chemlight_HiWhite"",""DemoCharge_Remote_Mag"",""rhsusf_m112x4_mag"",""rhsusf_mine_m14_mag"",""ATMine_Range_Mag"",""SatchelCharge_Remote_Mag"",""rhs_mine_M19_mag"",""APERSBoundingMine_Range_Mag"",""SLAMDirectionalMine_Wire_Mag"",""rhs_mag_mk84"",""IEDUrbanSmall_Remote_Mag""],[10,2,2,4,4,15,12,15,5,5,5,10,10,20,15,20,10]],[[""Rangefinder"",""ToolKit"",""ACE_elasticBandage"",""ACE_RangeCard"",""ItemcTab"",""ACE_wirecutter"",""ACE_M26_Clacker"",""ACE_Clacker""],[1,1,20,1,1,1,2,2]],[[""rhsusf_falconii""],[1]]],false]";
-						};
-					};
-				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item166
@@ -14881,25 +14770,6 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute1
-				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
 					class Value
@@ -14917,7 +14787,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=1;
 			};
 		};
 		class Item167
@@ -14941,8 +14811,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
+					property="ace_isMedicalVehicle";
+					expression="_this setVariable [""ace_medical_medicClass"",_value,true];";
 					class Value
 					{
 						class data
@@ -14951,10 +14821,10 @@ class Mission
 							{
 								type[]=
 								{
-									"STRING"
+									"SCALAR"
 								};
 							};
-							value="0";
+							value=1;
 						};
 					};
 				};
@@ -14977,26 +14847,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
-				{
-					property="ace_isMedicalVehicle";
-					expression="_this setVariable [""ace_medical_medicClass"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item168
@@ -15019,25 +14870,6 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute1
-				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
 					class Value
@@ -15055,7 +14887,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=1;
 			};
 		};
 		class Item169
@@ -15113,8 +14945,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
+					property="ace_isMedicalVehicle";
+					expression="_this setVariable [""ace_medical_medicClass"",_value,true];";
 					class Value
 					{
 						class data
@@ -15123,10 +14955,10 @@ class Mission
 							{
 								type[]=
 								{
-									"STRING"
+									"SCALAR"
 								};
 							};
-							value="0";
+							value=1;
 						};
 					};
 				};
@@ -15149,26 +14981,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
-				{
-					property="ace_isMedicalVehicle";
-					expression="_this setVariable [""ace_medical_medicClass"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item172
@@ -15509,28 +15322,10 @@ class Mission
 			};
 			id=433;
 			type="RHS_UH60M";
+			atlOffset=-1.5258789e-005;
 			class CustomAttributes
 			{
 				class Attribute0
-				{
-					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute1
 				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
@@ -15549,7 +15344,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
+				class Attribute1
 				{
 					property="DoorLB";
 					expression="_this animateDoor ['DoorLB',_value,true];_this animate ['doorHandler_L',_value,true]";
@@ -15568,7 +15363,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute3
+				class Attribute2
 				{
 					property="ace_cargo_space";
 					expression="[_this,_value] call ace_cargo_fnc_setSpace;";
@@ -15587,7 +15382,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute4
+				class Attribute3
 				{
 					property="DoorRB";
 					expression="_this animateDoor ['DoorRB',_value,true];_this animate ['doorHandler_R',_value,true]";
@@ -15606,7 +15401,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute5
+				class Attribute4
 				{
 					property="ace_isMedicalVehicle";
 					expression="_this setVariable [""ace_medical_medicClass"",_value,true];";
@@ -15625,7 +15420,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=6;
+				nAttributes=5;
 			};
 		};
 		class Item179
@@ -15649,8 +15444,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
+					property="ace_isMedicalVehicle";
+					expression="_this setVariable [""ace_medical_medicClass"",_value,true];";
 					class Value
 					{
 						class data
@@ -15659,10 +15454,10 @@ class Mission
 							{
 								type[]=
 								{
-									"STRING"
+									"SCALAR"
 								};
 							};
-							value="0";
+							value=1;
 						};
 					};
 				};
@@ -15685,26 +15480,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
-				{
-					property="ace_isMedicalVehicle";
-					expression="_this setVariable [""ace_medical_medicClass"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item180
@@ -15809,25 +15585,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
 					class Value
@@ -15845,7 +15602,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute3
+				class Attribute2
 				{
 					property="ace_isMedicalVehicle";
 					expression="_this setVariable [""ace_medical_medicClass"",_value,true];";
@@ -15864,7 +15621,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute4
+				class Attribute3
 				{
 					property="ramp_anim";
 					expression="_this animateSource ['ramp_anim',_value,true]";
@@ -15883,7 +15640,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=5;
+				nAttributes=4;
 			};
 		};
 		class Item181
@@ -15908,6 +15665,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""rhs_weap_m4_carryhandle"",""FirstAidKit"",""Medikit""],[2,10,2]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[12,4,2,2,4]],[[""ItemcTab""],[1]],[[""B_Parachute""],[4]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="VehicleCustomization";
 					expression="if (local _this) then {if (isSimpleObject _this) then {_this setVariable ['VehicleCustomization',_value]} else {([_this] + _value) call (uinamespace getvariable 'bis_fnc_initVehicle');};};";
 					class Value
@@ -16042,45 +15818,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
-				{
-					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""rhs_weap_m4_carryhandle"",""FirstAidKit"",""Medikit""],[2,10,2]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[12,4,2,2,4]],[[""ItemcTab""],[1]],[[""B_Parachute""],[4]]],false]";
-						};
-					};
-				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item182
@@ -16104,6 +15842,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""rhs_weap_m4_carryhandle"",""FirstAidKit"",""Medikit""],[2,10,2]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[12,4,2,2,4]],[[""ItemcTab""],[1]],[[""B_Parachute""],[4]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="VehicleCustomization";
 					expression="if (local _this) then {if (isSimpleObject _this) then {_this setVariable ['VehicleCustomization',_value]} else {([_this] + _value) call (uinamespace getvariable 'bis_fnc_initVehicle');};};";
 					class Value
@@ -16238,45 +15995,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
-				{
-					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""rhs_weap_m4_carryhandle"",""FirstAidKit"",""Medikit""],[2,10,2]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[12,4,2,2,4]],[[""ItemcTab""],[1]],[[""B_Parachute""],[4]]],false]";
-						};
-					};
-				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item183
@@ -16303,25 +16022,6 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute1
-				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
 					class Value
@@ -16339,7 +16039,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=1;
 			};
 		};
 		class Item184
@@ -16366,25 +16066,6 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute1
-				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
 					class Value
@@ -16402,7 +16083,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=1;
 			};
 		};
 		class Item185
@@ -16614,25 +16295,6 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute1
-				{
 					property="rhs_MELB_TailNumber";
 					expression="if(_value != 'NoChange')then{ [_this,'d_SN',_value] call RHS_MELB_fnc_tailNumber}";
 					class Value
@@ -16650,7 +16312,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
+				class Attribute1
 				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
@@ -16669,7 +16331,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item193
@@ -16710,25 +16372,6 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute1
-				{
 					property="allowDamage";
 					expression="_this allowdamage _value;";
 					class Value
@@ -16746,7 +16389,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=1;
 			};
 		};
 		class Item195
@@ -16785,29 +16428,6 @@ class Mission
 			};
 			id=477;
 			type="Flag_White_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				nAttributes=1;
-			};
 		};
 		class Item197
 		{
@@ -16828,25 +16448,6 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute1
-				{
 					property="DoorStates";
 					expression="['init',_this,_value] call bis_fnc_3DENAttributeDoorStates;";
 					class Value
@@ -16864,7 +16465,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
+				class Attribute1
 				{
 					property="ace_isRepairFacility";
 					expression="_this setVariable ['ace_isRepairFacility',_value, true];";
@@ -16883,7 +16484,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item198
@@ -16923,25 +16524,6 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute1
-				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
 					class Value
@@ -16959,7 +16541,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=1;
 			};
 		};
 		class Item200
@@ -16982,25 +16564,6 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute1
-				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
 					class Value
@@ -17018,7 +16581,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=1;
 			};
 		};
 		class Item201
@@ -18144,7 +17707,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{removeAllWeapons this;removeAllItems this;removeAllAssignedItems this;removeVest this;removeBackpack this;removeHeadgear this;removeGoggles this;this addVest 'desVest';this addHeadgear 'Desert_ECH';this addUniform 'everestdesuniform';this addAction['Get Rifleman Loadout',{player execVM 'functions\fn_Drifleman.sqf'}]; this addAction['Get CLS Loadout',{player execVM 'functions\fn_DCLS.sqf'}]; this addAction['Get Autorifleman (Light) Loadout',{player execVM 'functions\fn_DARL.sqf'}];this addAction['Get Autorifleman (Medium) Loadout',{player execVM 'functions\fn_DARM.sqf'}];this addAction['Get Anti-Tank (Light) Loadout',{player execVM 'functions\fn_DLAT.sqf'}];this addAction['Get Anti-Tank (Heavy) Loadout',{player execVM 'functions\fn_DHAT.sqf'}];this addAction['Get Anti-Air (Heavy) Loadout',{player execVM 'functions\fn_DHAA.sqf'}];this addAction['Get Marksman Loadout',{player execVM 'functions\fn_Dmarksman.sqf'}];this addAction['Get Engineer Loadout',{player execVM 'functions\fn_Dengineer.sqf'}]; this addAction['Get Grenadier Loadout',{player execVM 'functions\fn_DGrenadier.sqf'}];}";
+						init="call{removeAllWeapons this;removeAllItems this;removeAllAssignedItems this;removeVest this;removeBackpack this;removeHeadgear this;removeGoggles this;this addVest 'desVest';this addHeadgear 'Desert_ECH';this addUniform 'everestdesuniform';this addAction['Get Rifleman Loadout',{player execVM 'functions\fn_Drifleman.sqf'}]; this addAction['Get CLS Loadout',{player execVM 'functions\fn_DCLS.sqf'}]; this addAction['Get Autorifleman (Light) Loadout',{player execVM 'functions\fn_DARL.sqf'}];this addAction['Get Autorifleman (Medium) Loadout',{player execVM 'functions\fn_DARM.sqf'}];this addAction['Get Anti-Tank (Light) Loadout',{player execVM 'functions\fn_DLAT.sqf'}];this addAction['Get Anti-Tank (Heavy) Loadout',{player execVM 'functions\fn_DHAT.sqf'}];this addAction['Get Anti-Air (Heavy) Loadout',{player execVM 'functions\fn_DHAA.sqf'}];this addAction['Get Marksman Loadout',{player execVM 'functions\fn_Dmarksman.sqf'}];this addAction['Get Engineer Loadout',{player execVM 'functions\fn_Dengineer.sqf'}]; this addAction['Get Grenadier Loadout',{player execVM 'functions\fn_DGrenadier.sqf'}]; this execVM 'functions\fn_Arsenal.sqf';}";
 						disableSimulation=1;
 						class Inventory
 						{
@@ -18324,7 +17887,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{removeAllWeapons this;removeAllItems this;removeAllAssignedItems this;removeVest this;removeBackpack this;removeHeadgear this;removeGoggles this;this addVest 'nightVest';this addHeadgear 'Night_ECH';this addUniform 'everestnightuniform';this addAction['Get Rifleman Loadout',{player execVM 'functions\fn_NDrifleman.sqf'}]; this addAction['Get CLS Loadout',{player execVM 'functions\fn_NDCLS.sqf'}]; this addAction['Get Autorifleman (Light) Loadout',{player execVM 'functions\fn_NDARL.sqf'}];this addAction['Get Autorifleman (Medium) Loadout',{player execVM 'functions\fn_NDARM.sqf'}];this addAction['Get Anti-Tank (Light) Loadout',{player execVM 'functions\fn_NDLAT.sqf'}];this addAction['Get Anti-Tank (Heavy) Loadout',{player execVM 'functions\fn_NDHAT.sqf'}];this addAction['Get Anti-Air (Heavy) Loadout',{player execVM 'functions\fn_NDHAA.sqf'}];this addAction['Get Marksman Loadout',{player execVM 'functions\fn_NDmarksman.sqf'}];this addAction['Get Engineer Loadout',{player execVM 'functions\fn_NDengineer.sqf'}]; this addAction['Get Grenadier Loadout',{player execVM 'functions\fn_NDGrenadier.sqf'}]; this addAction['Get Heli Pilot Loadout',{player execVM 'functions\fn_NDpilot.sqf'}]; this addAction['Get Fighter Pilot Loadout',{player execVM 'functions\fn_Dcaspilot.sqf'}];}";
+						init="call{removeAllWeapons this;removeAllItems this;removeAllAssignedItems this;removeVest this;removeBackpack this;removeHeadgear this;removeGoggles this;this addVest 'nightVest';this addHeadgear 'Night_ECH';this addUniform 'everestnightuniform';this addAction['Get Rifleman Loadout',{player execVM 'functions\fn_NDrifleman.sqf'}]; this addAction['Get CLS Loadout',{player execVM 'functions\fn_NDCLS.sqf'}]; this addAction['Get Autorifleman (Light) Loadout',{player execVM 'functions\fn_NDARL.sqf'}];this addAction['Get Autorifleman (Medium) Loadout',{player execVM 'functions\fn_NDARM.sqf'}];this addAction['Get Anti-Tank (Light) Loadout',{player execVM 'functions\fn_NDLAT.sqf'}];this addAction['Get Anti-Tank (Heavy) Loadout',{player execVM 'functions\fn_NDHAT.sqf'}];this addAction['Get Anti-Air (Heavy) Loadout',{player execVM 'functions\fn_NDHAA.sqf'}];this addAction['Get Marksman Loadout',{player execVM 'functions\fn_NDmarksman.sqf'}];this addAction['Get Engineer Loadout',{player execVM 'functions\fn_NDengineer.sqf'}]; this addAction['Get Grenadier Loadout',{player execVM 'functions\fn_NDGrenadier.sqf'}]; this addAction['Get Heli Pilot Loadout',{player execVM 'functions\fn_NDpilot.sqf'}]; this addAction['Get Fighter Pilot Loadout',{player execVM 'functions\fn_Dcaspilot.sqf'}]; this execVM ""functions\fn_Arsenal.sqf"";}";
 						disableSimulation=1;
 						class Inventory
 						{
@@ -18573,25 +18136,6 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute1
-				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
 					class Value
@@ -18609,7 +18153,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
+				class Attribute1
 				{
 					property="ace_isRepairVehicle";
 					expression="_this setVariable ['ace_isRepairVehicle',_value, true];";
@@ -18628,7 +18172,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item275
@@ -18650,25 +18194,6 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute1
-				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
 					class Value
@@ -18686,7 +18211,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=1;
 			};
 		};
 		class Item276
@@ -18728,25 +18253,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="rhs_decalDoors";
 					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_2',_value] call rhs_fnc_hmmwv_setDecal}";
 					class Value
@@ -18764,7 +18270,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute3
+				class Attribute2
 				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
@@ -18783,7 +18289,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=3;
 			};
 		};
 		class Item277
@@ -18806,8 +18312,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
+					property="ace_isMedicalVehicle";
+					expression="_this setVariable [""ace_medical_medicClass"",_value,true];";
 					class Value
 					{
 						class data
@@ -18816,10 +18322,10 @@ class Mission
 							{
 								type[]=
 								{
-									"STRING"
+									"SCALAR"
 								};
 							};
-							value="0";
+							value=1;
 						};
 					};
 				};
@@ -18844,25 +18350,6 @@ class Mission
 				};
 				class Attribute2
 				{
-					property="ace_isMedicalVehicle";
-					expression="_this setVariable [""ace_medical_medicClass"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute3
-				{
 					property="ace_isRepairVehicle";
 					expression="_this setVariable ['ace_isRepairVehicle',_value, true];";
 					class Value
@@ -18880,7 +18367,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute4
+				class Attribute3
 				{
 					property="ace_cargo_space";
 					expression="[_this,_value] call ace_cargo_fnc_setSpace;";
@@ -18899,7 +18386,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=5;
+				nAttributes=4;
 			};
 		};
 		class Item278
@@ -18941,25 +18428,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="rhs_decalDoors";
 					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_2',_value] call rhs_fnc_hmmwv_setDecal}";
 					class Value
@@ -18977,7 +18445,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute3
+				class Attribute2
 				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
@@ -18996,7 +18464,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=3;
 			};
 		};
 		class Item279
@@ -19088,25 +18556,6 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute1
-				{
 					property="rhs_MELB_TailNumber";
 					expression="if(_value != 'NoChange')then{ [_this,'d_SN',_value] call RHS_MELB_fnc_tailNumber}";
 					class Value
@@ -19124,7 +18573,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
+				class Attribute1
 				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
@@ -19143,7 +18592,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item284
@@ -19184,17 +18633,41 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4820.7471,68.237122,566.2262};
-				angles[]={0.010000871,4.444272,0.0050033992};
+				position[]={4820.7471,68.237038,566.22583};
+				angles[]={0.010000736,4.4442716,0.0050090947};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{this execVM 'functions\fn_Arsenal.sqf';}";
 			};
 			id=594;
 			type="Box_NATO_Equip_F";
-			atlOffset=0.20409393;
+			atlOffset=0.20400238;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item287
 		{
@@ -19351,6 +18824,7 @@ class Mission
 			};
 			id=600;
 			type="Land_arrows_desk_R";
+			atlOffset=-4.5776367e-005;
 		};
 	};
 	class Connections
