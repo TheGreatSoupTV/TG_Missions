@@ -1,0 +1,12 @@
+name = "Tactical Gaming Uniforms";
+picture = "tg_icon.paa";
+actionName = "Website";
+action = "http://www.tacticalgaming.net/hq";
+description = "Tactical Gaming Uniforms";
+logo = "tg_icon.paa";
+logoOver = "tg_icon.paa";
+overview = "Tactical Gaming Uniforms for first Battalion. Make sure you check out the Mods and servers post under Arma Division for the most up to date mods.";
+author = "Tactical Gaming";
+overviewPicture = "tg_icon.paa";
+hideName = 0;
+hidePicture = 0;
