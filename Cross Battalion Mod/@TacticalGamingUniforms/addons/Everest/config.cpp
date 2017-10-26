@@ -1,22 +1,22 @@
 class CfgFactionClasses
 {
-    class Everest_Faction 
-    { 
-        displayName = "Everest"; 
-        priority = 4; // Position in list. 
-        side = 1; // Opfor = 0, Blufor = 1, Indep = 2. 
-        icon = "\Everest\data\tg_icon.paa"; //Custom Icon 
-    };  
+    class Everest_Faction
+    {
+        displayName = "Everest";
+        priority = 4; // Position in list.
+        side = 1; // Opfor = 0, Blufor = 1, Indep = 2.
+        icon = "\Everest\data\tg_icon.paa"; //Custom Icon
+    };
 };
 
 class CfgPatches {
-    class EverestCustom_Config 
-    { 
-        units[] = {"EverestCustom_Mod"}; 
-        weapons[] = {}; 
-        requiredVersion = 0.1; 
-        requiredAddons[] = {"A3_Characters_F"}; 
-    }; 
+    class EverestCustom_Config
+    {
+        units[] = {"EverestCustom_Mod"};
+        weapons[] = {};
+        requiredVersion = 0.1;
+        requiredAddons[] = {"A3_Characters_F"};
+    };
 };
 
 class CfgUnitInsignia
@@ -70,80 +70,87 @@ class CfgUnitInsignia
 		texture = "\Everest\Data\Zulu.paa"; // Image path
 		textureVehicle = ""; // Does nothing currently, reserved for future use
 	};
+  class TG
+{
+  displayName = "TacticalGaming"; // Name displayed in Arsenal
+  author = "Hermano [TG]"; // Author displayed in Arsenal
+  texture = "\Everest\Data\tg_icon.paa"; // Image path
+  textureVehicle = ""; // Does nothing currently, reserved for future use
+};
 };
 
 class CfgVehicles {
 	class B_Soldier_F;
 
     class Everest_SoldierDES: B_soldier_F {
-        author = "JediNarwals [TG]"; 
-        _generalMacro = "B_soldier_F"; 
-        scope = 2; 
-        displayName = "Everest Soldier"; 
-        identityTypes[] = {"Head_NATO", "G_NATO_default"}; 
-        genericNames = "NATOMen"; 
+        author = "JediNarwals [TG]";
+        _generalMacro = "B_soldier_F";
+        scope = 2;
+        displayName = "Everest Soldier";
+        identityTypes[] = {"Head_NATO", "G_NATO_default"};
+        genericNames = "NATOMen";
         faction = "Everest_Faction";
-        model = "\A3\characters_f\BLUFOR\b_soldier_01.p3d"; //Default NATO 
+        model = "\A3\characters_f\BLUFOR\b_soldier_01.p3d"; //Default NATO
         icon = "\Everest\data\tg_icon.paa";
-        uniformClass = "Everest_Uniform"; 
-        hiddenSelections[] = {"Camo","Insignia"}; 
-        hiddenSelectionsTextures[] = {"\Everest\Data\Everestdesclo.paa"}; 
-         weapons[] = {"Throw","Put"}; 
-        respawnWeapons[] = {"Throw","Put"}; 
+        uniformClass = "Everest_Uniform";
+        hiddenSelections[] = {"Camo","Insignia"};
+        hiddenSelectionsTextures[] = {"\Everest\Data\Everestdesclo.paa"};
+         weapons[] = {"Throw","Put"};
+        respawnWeapons[] = {"Throw","Put"};
     };
 
     class Everest_SoldierNGT: B_soldier_F {
-        author = "JediNarwals [TG]"; 
-        _generalMacro = "B_soldier_F"; 
-        scope = 2; 
-        displayName = "Everest Soldier Night"; 
-        identityTypes[] = {"Head_NATO", "G_NATO_default"}; 
-        genericNames = "NATOMen"; 
+        author = "JediNarwals [TG]";
+        _generalMacro = "B_soldier_F";
+        scope = 2;
+        displayName = "Everest Soldier Night";
+        identityTypes[] = {"Head_NATO", "G_NATO_default"};
+        genericNames = "NATOMen";
         faction = "Everest_Faction";
-        model = "\A3\characters_f\BLUFOR\b_soldier_01.p3d"; //Default NATO 
+        model = "\A3\characters_f\BLUFOR\b_soldier_01.p3d"; //Default NATO
         icon = "\Everest\data\tg_icon.paa";
-        uniformClass = "Everest_Uniform"; 
-        hiddenSelections[] = {"Camo","Insignia"}; 
-        hiddenSelectionsTextures[] = {"\Everest\Data\Everestnightclo.paa"}; 
-         weapons[] = {"Throw","Put"}; 
-        respawnWeapons[] = {"Throw","Put"}; 
+        uniformClass = "Everest_Uniform";
+        hiddenSelections[] = {"Camo","Insignia"};
+        hiddenSelectionsTextures[] = {"\Everest\Data\Everestnightclo.paa"};
+         weapons[] = {"Throw","Put"};
+        respawnWeapons[] = {"Throw","Put"};
     };
 
     class Everest_SoldierURB: B_soldier_F {
-        author = "JediNarwals [TG]"; 
-        _generalMacro = "B_soldier_F"; 
-        scope = 2; 
-        displayName = "Everest Soldier Urban"; 
-        identityTypes[] = {"Head_NATO", "G_NATO_default"}; 
-        genericNames = "NATOMen"; 
+        author = "JediNarwals [TG]";
+        _generalMacro = "B_soldier_F";
+        scope = 2;
+        displayName = "Everest Soldier Urban";
+        identityTypes[] = {"Head_NATO", "G_NATO_default"};
+        genericNames = "NATOMen";
         faction = "Everest_Faction";
-        model = "\A3\characters_f\BLUFOR\b_soldier_01.p3d"; //Default NATO 
+        model = "\A3\characters_f\BLUFOR\b_soldier_01.p3d"; //Default NATO
         icon = "\Everest\data\tg_icon.paa";
-        uniformClass = "Everest_Uniform"; 
-        hiddenSelections[] = {"Camo","Insignia"}; 
-        hiddenSelectionsTextures[] = {"\Everest\Data\Everesturbanclo.paa"}; 
-         weapons[] = {"Throw","Put"}; 
-        respawnWeapons[] = {"Throw","Put"}; 
+        uniformClass = "Everest_Uniform";
+        hiddenSelections[] = {"Camo","Insignia"};
+        hiddenSelectionsTextures[] = {"\Everest\Data\Everesturbanclo.paa"};
+         weapons[] = {"Throw","Put"};
+        respawnWeapons[] = {"Throw","Put"};
     };
     class Everest_SoldierWLND: B_soldier_F {
-        author = "JediNarwals [TG]"; 
-        _generalMacro = "B_soldier_F"; 
-        scope = 2; 
-        displayName = "Everest Soldier Urban"; 
-        identityTypes[] = {"Head_NATO", "G_NATO_default"}; 
-        genericNames = "NATOMen"; 
+        author = "JediNarwals [TG]";
+        _generalMacro = "B_soldier_F";
+        scope = 2;
+        displayName = "Everest Soldier Urban";
+        identityTypes[] = {"Head_NATO", "G_NATO_default"};
+        genericNames = "NATOMen";
         faction = "Everest_Faction";
-        model = "\A3\characters_f\BLUFOR\b_soldier_01.p3d"; //Default NATO 
+        model = "\A3\characters_f\BLUFOR\b_soldier_01.p3d"; //Default NATO
         icon = "\Everest\data\tg_icon.paa";
-        uniformClass = "Everest_Uniform"; 
-        hiddenSelections[] = {"Camo","Insignia"}; 
-        hiddenSelectionsTextures[] = {"\Everest\Data\Everestwlandclo.paa"}; 
-         weapons[] = {"Throw","Put"}; 
-        respawnWeapons[] = {"Throw","Put"}; 
+        uniformClass = "Everest_Uniform";
+        hiddenSelections[] = {"Camo","Insignia"};
+        hiddenSelectionsTextures[] = {"\Everest\Data\Everestwlandclo.paa"};
+         weapons[] = {"Throw","Put"};
+        respawnWeapons[] = {"Throw","Put"};
     };
 };
 
-class cfgWeapons 
+class cfgWeapons
 {
     class ItemCore;
 	class UniformItem;
@@ -152,7 +159,7 @@ class cfgWeapons
         class ItemInfo;
     };
 
-    class everestdesClothing : Uniform_Base 
+    class everestdesClothing : Uniform_Base
     {
         author = "JediNarwals [TG]";
         scope = 2;
@@ -160,7 +167,7 @@ class cfgWeapons
         picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 
-        class ItemInfo : UniformItem 
+        class ItemInfo : UniformItem
         {
             uniformModel = "-";
             uniformClass = "Everest_SoldierDES"; //would be same as our made soldier class
@@ -170,7 +177,7 @@ class cfgWeapons
         };
     };
 
-    class everestnightClothing : Uniform_Base 
+    class everestnightClothing : Uniform_Base
     {
         author = "JediNarwals [TG]";
         scope = 2;
@@ -178,7 +185,7 @@ class cfgWeapons
         picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 
-        class ItemInfo : UniformItem 
+        class ItemInfo : UniformItem
         {
             uniformModel = "-";
             uniformClass = "Everest_SoldierNGT"; //would be same as our made soldier class
@@ -188,7 +195,7 @@ class cfgWeapons
         };
     };
 
-    class everesturbanClothing : Uniform_Base 
+    class everesturbanClothing : Uniform_Base
     {
         author = "JediNarwals [TG]";
         scope = 2;
@@ -196,7 +203,7 @@ class cfgWeapons
         picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 
-        class ItemInfo : UniformItem 
+        class ItemInfo : UniformItem
         {
             uniformModel = "-";
             uniformClass = "Everest_SoldierURB"; //would be same as our made soldier class
@@ -206,7 +213,7 @@ class cfgWeapons
         };
     };
 
-    class everestwlandClothing : Uniform_Base 
+    class everestwlandClothing : Uniform_Base
     {
         author = "JediNarwals [TG]";
         scope = 2;
@@ -214,7 +221,7 @@ class cfgWeapons
         picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 
-        class ItemInfo : UniformItem 
+        class ItemInfo : UniformItem
         {
             uniformModel = "-";
             uniformClass = "Everest_SoldierWLND"; //would be same as our made soldier class
@@ -226,7 +233,7 @@ class cfgWeapons
 
 
     class HeadgearItem;
-    class Desert_ECH : ItemCore 
+    class Desert_ECH : ItemCore
     {
         author = "JediNarwals [TG]";
         scope = 2;
@@ -237,7 +244,7 @@ class cfgWeapons
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\Everest\data\everestdeshelm.paa"};
 
-        class ItemInfo : HeadgearItem 
+        class ItemInfo : HeadgearItem
         {
             mass = 20;
             uniformModel = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
@@ -257,7 +264,7 @@ class cfgWeapons
         };
     };
 
-    class Night_ECH : ItemCore 
+    class Night_ECH : ItemCore
     {
         author = "JediNarwals [TG]";
         scope = 2;
@@ -268,7 +275,7 @@ class cfgWeapons
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\Everest\data\everestnighthelm.paa"};
 
-        class ItemInfo : HeadgearItem 
+        class ItemInfo : HeadgearItem
         {
             mass = 20;
             uniformModel = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
@@ -288,7 +295,7 @@ class cfgWeapons
         };
     };
 
-    class Urban_ECH : ItemCore 
+    class Urban_ECH : ItemCore
     {
         author = "JediNarwals [TG]";
         scope = 2;
@@ -299,7 +306,7 @@ class cfgWeapons
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\Everest\data\everesturbanhelm.paa"};
 
-        class ItemInfo : HeadgearItem 
+        class ItemInfo : HeadgearItem
         {
             mass = 20;
             uniformModel = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
@@ -319,7 +326,7 @@ class cfgWeapons
         };
     };
 
-    class Woodland_ECH : ItemCore 
+    class Woodland_ECH : ItemCore
     {
         author = "JediNarwals [TG]";
         scope = 2;
@@ -330,7 +337,7 @@ class cfgWeapons
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\Everest\data\everestwlandhelm.paa"};
 
-        class ItemInfo : HeadgearItem 
+        class ItemInfo : HeadgearItem
         {
             mass = 20;
             uniformModel = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
@@ -359,7 +366,7 @@ class cfgWeapons
         picture = "\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
         model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\Everest\data\everestdeshelmBGC.paa"};   
+        hiddenSelectionsTextures[] = {"\Everest\data\everestdeshelmBGC.paa"};
 
         class ItemInfo : HeadgearItem
         {
@@ -390,7 +397,7 @@ class cfgWeapons
         picture = "\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
         model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\Everest\data\everestnighthelmBGC.paa"};   
+        hiddenSelectionsTextures[] = {"\Everest\data\everestnighthelmBGC.paa"};
 
         class ItemInfo : HeadgearItem
         {
@@ -421,7 +428,7 @@ class cfgWeapons
         picture = "\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
         model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\Everest\data\everesturbanhelmBGC.paa"};   
+        hiddenSelectionsTextures[] = {"\Everest\data\everesturbanhelmBGC.paa"};
 
         class ItemInfo : HeadgearItem
         {
@@ -452,7 +459,7 @@ class cfgWeapons
         picture = "\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
         model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\Everest\data\everestwlandhelmBGC.paa"};   
+        hiddenSelectionsTextures[] = {"\Everest\data\everestwlandhelmBGC.paa"};
 
         class ItemInfo : HeadgearItem
         {
@@ -483,7 +490,7 @@ class cfgWeapons
         picture = "\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
         model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\Everest\data\everestdeshelmCO.paa"};   
+        hiddenSelectionsTextures[] = {"\Everest\data\everestdeshelmCO.paa"};
 
         class ItemInfo : HeadgearItem
         {
@@ -514,7 +521,7 @@ class cfgWeapons
         picture = "\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
         model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\Everest\data\everestnighthelmCO.paa"};   
+        hiddenSelectionsTextures[] = {"\Everest\data\everestnighthelmCO.paa"};
 
         class ItemInfo : HeadgearItem
         {
@@ -545,7 +552,7 @@ class cfgWeapons
         picture = "\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
         model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\Everest\data\everesturbanhelmCO.paa"};   
+        hiddenSelectionsTextures[] = {"\Everest\data\everesturbanhelmCO.paa"};
 
         class ItemInfo : HeadgearItem
         {
@@ -576,7 +583,7 @@ class cfgWeapons
         picture = "\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
         model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\Everest\data\everestwlandhelmCO.paa"};   
+        hiddenSelectionsTextures[] = {"\Everest\data\everestwlandhelmCO.paa"};
 
         class ItemInfo : HeadgearItem
         {
@@ -607,7 +614,7 @@ class cfgWeapons
         picture = "\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
         model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\Everest\data\everestdeshelmXO.paa"};   
+        hiddenSelectionsTextures[] = {"\Everest\data\everestdeshelmXO.paa"};
 
         class ItemInfo : HeadgearItem
         {
@@ -638,7 +645,7 @@ class cfgWeapons
         picture = "\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
         model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\Everest\data\everestnighthelmXO.paa"};   
+        hiddenSelectionsTextures[] = {"\Everest\data\everestnighthelmXO.paa"};
 
         class ItemInfo : HeadgearItem
         {
@@ -669,7 +676,7 @@ class cfgWeapons
         picture = "\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
         model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\Everest\data\everesturbanhelmXO.paa"};   
+        hiddenSelectionsTextures[] = {"\Everest\data\everesturbanhelmXO.paa"};
 
         class ItemInfo : HeadgearItem
         {
@@ -700,7 +707,7 @@ class cfgWeapons
         picture = "\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
         model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\Everest\data\everestwlandhelmXO.paa"};   
+        hiddenSelectionsTextures[] = {"\Everest\data\everestwlandhelmXO.paa"};
 
         class ItemInfo : HeadgearItem
         {
@@ -731,7 +738,7 @@ class cfgWeapons
         picture = "\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
         model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\Everest\data\everestdeshelmAT.paa"};   
+        hiddenSelectionsTextures[] = {"\Everest\data\everestdeshelmAT.paa"};
 
         class ItemInfo : HeadgearItem
         {
@@ -762,7 +769,7 @@ class cfgWeapons
         picture = "\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
         model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\Everest\data\everestnighthelmAT.paa"};   
+        hiddenSelectionsTextures[] = {"\Everest\data\everestnighthelmAT.paa"};
 
         class ItemInfo : HeadgearItem
         {
@@ -793,7 +800,7 @@ class cfgWeapons
         picture = "\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
         model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\Everest\data\everesturbanhelmAT.paa"};   
+        hiddenSelectionsTextures[] = {"\Everest\data\everesturbanhelmAT.paa"};
 
         class ItemInfo : HeadgearItem
         {
@@ -824,7 +831,7 @@ class cfgWeapons
         picture = "\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
         model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\Everest\data\everestwlandhelmAT.paa"};   
+        hiddenSelectionsTextures[] = {"\Everest\data\everestwlandhelmAT.paa"};
 
         class ItemInfo : HeadgearItem
         {
@@ -852,7 +859,7 @@ class cfgWeapons
         class ItemInfo;
     };
 
-    class desVest : Vest_Camo_Base 
+    class desVest : Vest_Camo_Base
     {
         author = "JediNarwals [TG]";
         scope = 2;
@@ -862,7 +869,7 @@ class cfgWeapons
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\Everest\data\everestdesvest.paa"};
 
-        class ItemInfo : VestItem 
+        class ItemInfo : VestItem
         {
             uniformModel = "A3\characters_f\BLUFOR\equip_b_vest02.p3d";
             containerClass = Supply300;
@@ -885,11 +892,11 @@ class cfgWeapons
 					armor		= 8;
 					passThrough	= 0.3;
 				};
-				class Chest 
+				class Chest
 				{
-					hitpointName	= "HitChest"; 
-					armor		= 30; 
-					passThrough	= 0.1; 
+					hitpointName	= "HitChest";
+					armor		= 30;
+					passThrough	= 0.1;
 				};
 				class Diaphragm
 				{
@@ -899,7 +906,7 @@ class cfgWeapons
 				};
 				class Abdomen
 				{
-					hitpointName	= "HitAbdomen"; 
+					hitpointName	= "HitAbdomen";
 					armor		= 28;
 					passThrough	= 0.1;
 				};
@@ -907,12 +914,12 @@ class cfgWeapons
 				{
 					hitpointName	= "HitBody";
 					passThrough	= 0.1;
-				};  
+				};
             };
         };
     };
-    
-    class nightVest : Vest_Camo_Base 
+
+    class nightVest : Vest_Camo_Base
     {
         author = "JediNarwals [TG]";
         scope = 2;
@@ -922,7 +929,7 @@ class cfgWeapons
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\Everest\data\everestnightvest.paa"};
 
-        class ItemInfo : VestItem 
+        class ItemInfo : VestItem
         {
             uniformModel = "A3\characters_f\BLUFOR\equip_b_vest02.p3d";
             containerClass = Supply300;
@@ -945,11 +952,11 @@ class cfgWeapons
 					armor		= 8;
 					passThrough	= 0.3;
 				};
-				class Chest 
+				class Chest
 				{
-					hitpointName	= "HitChest"; 
-					armor		= 30; 
-					passThrough	= 0.1; 
+					hitpointName	= "HitChest";
+					armor		= 30;
+					passThrough	= 0.1;
 				};
 				class Diaphragm
 				{
@@ -959,7 +966,7 @@ class cfgWeapons
 				};
 				class Abdomen
 				{
-					hitpointName	= "HitAbdomen"; 
+					hitpointName	= "HitAbdomen";
 					armor		= 28;
 					passThrough	= 0.1;
 				};
@@ -967,11 +974,11 @@ class cfgWeapons
 				{
 					hitpointName	= "HitBody";
 					passThrough	= 0.1;
-				};  
+				};
             };
         };
     };
-    class urbanVest : Vest_Camo_Base 
+    class urbanVest : Vest_Camo_Base
     {
         author = "JediNarwals [TG]";
         scope = 2;
@@ -981,7 +988,7 @@ class cfgWeapons
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\Everest\data\everesturbanvest.paa"};
 
-        class ItemInfo : VestItem 
+        class ItemInfo : VestItem
         {
             uniformModel = "A3\characters_f\BLUFOR\equip_b_vest02.p3d";
             containerClass = Supply300;
@@ -1004,11 +1011,11 @@ class cfgWeapons
 					armor		= 8;
 					passThrough	= 0.3;
 				};
-				class Chest 
+				class Chest
 				{
-					hitpointName	= "HitChest"; 
-					armor		= 30; 
-					passThrough	= 0.1; 
+					hitpointName	= "HitChest";
+					armor		= 30;
+					passThrough	= 0.1;
 				};
 				class Diaphragm
 				{
@@ -1018,7 +1025,7 @@ class cfgWeapons
 				};
 				class Abdomen
 				{
-					hitpointName	= "HitAbdomen"; 
+					hitpointName	= "HitAbdomen";
 					armor		= 28;
 					passThrough	= 0.1;
 				};
@@ -1026,12 +1033,12 @@ class cfgWeapons
 				{
 					hitpointName	= "HitBody";
 					passThrough	= 0.1;
-				};  
+				};
             };
         };
     };
 
-    class woodLandVest : Vest_Camo_Base 
+    class woodLandVest : Vest_Camo_Base
     {
         author = "JediNarwals [TG]";
         scope = 2;
@@ -1041,7 +1048,7 @@ class cfgWeapons
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\Everest\data\everestwlandvest.paa"};
 
-        class ItemInfo : VestItem 
+        class ItemInfo : VestItem
         {
             uniformModel = "A3\characters_f\BLUFOR\equip_b_vest02.p3d";
             containerClass = Supply300;
@@ -1064,11 +1071,11 @@ class cfgWeapons
 					armor		= 8;
 					passThrough	= 0.3;
 				};
-				class Chest 
+				class Chest
 				{
-					hitpointName	= "HitChest"; 
-					armor		= 30; 
-					passThrough	= 0.1; 
+					hitpointName	= "HitChest";
+					armor		= 30;
+					passThrough	= 0.1;
 				};
 				class Diaphragm
 				{
@@ -1078,7 +1085,7 @@ class cfgWeapons
 				};
 				class Abdomen
 				{
-					hitpointName	= "HitAbdomen"; 
+					hitpointName	= "HitAbdomen";
 					armor		= 28;
 					passThrough	= 0.1;
 				};
@@ -1086,7 +1093,7 @@ class cfgWeapons
 				{
 					hitpointName	= "HitBody";
 					passThrough	= 0.1;
-				};  
+				};
             };
         };
     };
