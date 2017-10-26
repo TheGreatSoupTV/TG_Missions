@@ -8,20 +8,22 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=146;
+		nextID=188;
 	};
 	class Camera
 	{
-		pos[]={14684.628,51.658417,16712.469};
-		dir[]={-0.37968805,-0.84099883,0.38567567};
-		up[]={-0.59001505,0.54099149,0.5993222};
-		aside[]={0.71268743,-5.9478771e-007,0.70161813};
+		pos[]={14707.375,51.614101,16698.123};
+		dir[]={-0.4871189,-0.74499911,0.45594007};
+		up[]={-0.5439496,0.66699171,0.50913531};
+		aside[]={0.68342394,-6.5553468e-007,0.7301529};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
 	"A3_Characters_F",
+	"A3_Characters_F_Mark",
+	"ace_explosives",
 	"A3_Weapons_F",
 	"A3_Characters_F_Orange_Facewear",
 	"ace_goggles",
@@ -29,6 +31,7 @@ addons[]=
 	"A3_Weapons_F_Items",
 	"ace_medical",
 	"ace_parachute",
+	"task_force_radio_items",
 	"ace_ballistics",
 	"ace_medical_menu",
 	"A3_Modules_F_Curator_Curator",
@@ -36,7 +39,6 @@ addons[]=
 	"ace_advanced_fatigue",
 	"ace_advanced_throwing",
 	"ace_map",
-	"ace_explosives",
 	"ace_hearing",
 	"ace_interaction",
 	"ace_map_gestures",
@@ -52,7 +54,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=25;
+		items=27;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -62,164 +64,178 @@ class AddonsMetaData
 		};
 		class Item1
 		{
-			className="A3_Weapons_F";
-			name="Arma 3 Alpha - Weapons and Accessories";
+			className="A3_Characters_F_Mark";
+			name="Arma 3 Marksmen - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
 		class Item2
-		{
-			className="A3_Characters_F_Orange";
-			name="Arma 3 Orange - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item3
-		{
-			className="ace_goggles";
-			name="ACE3 - Goggles";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item4
-		{
-			className="EverestCustom_Config";
-			name="EverestCustom_Config";
-		};
-		class Item5
-		{
-			className="ace_medical";
-			name="ACE3 - Medical";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item6
-		{
-			className="ace_parachute";
-			name="ACE3 - Parachute";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item7
-		{
-			className="ace_ballistics";
-			name="ACE3 - Ballistics";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item8
-		{
-			className="ace_medical_menu";
-			name="ACE3 - Medical Menu";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item9
-		{
-			className="A3_Modules_F_Curator";
-			name="Arma 3 Zeus Update - Scripted Modules";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item10
-		{
-			className="ace_advanced_ballistics";
-			name="ACE3 - Advanced Ballistics";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item11
-		{
-			className="ace_advanced_fatigue";
-			name="ACE3 - Advanced Fatigue";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item12
-		{
-			className="ace_advanced_throwing";
-			name="ACE3 - Advanced Throwing";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item13
-		{
-			className="ace_map";
-			name="ACE3 - Map";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item14
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
+		class Item3
+		{
+			className="A3_Weapons_F";
+			name="Arma 3 Alpha - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item4
+		{
+			className="A3_Characters_F_Orange";
+			name="Arma 3 Orange - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item5
+		{
+			className="ace_goggles";
+			name="ACE3 - Goggles";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item6
+		{
+			className="EverestCustom_Config";
+			name="EverestCustom_Config";
+		};
+		class Item7
+		{
+			className="ace_medical";
+			name="ACE3 - Medical";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item8
+		{
+			className="ace_parachute";
+			name="ACE3 - Parachute";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item9
+		{
+			className="task_force_radio_items";
+			name="task_force_radio_items";
+			author="[TF]Nkey";
+			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
+		};
+		class Item10
+		{
+			className="ace_ballistics";
+			name="ACE3 - Ballistics";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item11
+		{
+			className="ace_medical_menu";
+			name="ACE3 - Medical Menu";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item12
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item13
+		{
+			className="ace_advanced_ballistics";
+			name="ACE3 - Advanced Ballistics";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item14
+		{
+			className="ace_advanced_fatigue";
+			name="ACE3 - Advanced Fatigue";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
 		class Item15
+		{
+			className="ace_advanced_throwing";
+			name="ACE3 - Advanced Throwing";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item16
+		{
+			className="ace_map";
+			name="ACE3 - Map";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item17
 		{
 			className="ace_hearing";
 			name="ACE3 - Hearing";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item16
+		class Item18
 		{
 			className="ace_interaction";
 			name="ACE3 - Interaction";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item17
+		class Item19
 		{
 			className="ace_map_gestures";
 			name="ACE3 - Map Gestures";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item18
+		class Item20
 		{
 			className="ace_nametags";
 			name="ACE3 - Name Tags";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item19
+		class Item21
 		{
 			className="ace_finger";
 			name="ACE3 - Finger";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item20
+		class Item22
 		{
 			className="ace_nightvision";
 			name="ACE3 - Night Vision";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item21
+		class Item23
 		{
 			className="ace_respawn";
 			name="ACE3 - Respawn";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item22
+		class Item24
 		{
 			className="ace_scopes";
 			name="ACE3 - Scopes";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item23
+		class Item25
 		{
 			className="ace_ui";
 			name="ACE3 - UI";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item24
+		class Item26
 		{
 			className="ace_zeus";
 			name="ACE3 - Zeus";
@@ -305,7 +321,7 @@ class Mission
 						angles[]={0,5.472724,0};
 					};
 					side="West";
-					flags=7;
+					flags=6;
 					class Attributes
 					{
 						rank="COLONEL";
@@ -313,8 +329,8 @@ class Mission
 						description="Division Officer";
 						isPlayer=1;
 					};
-					id=1;
-					type="B_Soldier_unarmed_F";
+					id=187;
+					type="B_CTRG_soldier_GL_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -403,7 +419,7 @@ class Mission
 						angles[]={0,5.5300231,0};
 					};
 					side="West";
-					flags=7;
+					flags=6;
 					class Attributes
 					{
 						rank="MAJOR";
@@ -411,8 +427,8 @@ class Mission
 						description="Brigade Commander";
 						isPlayable=1;
 					};
-					id=3;
-					type="B_Soldier_unarmed_F";
+					id=186;
+					type="B_CTRG_Sharphooter_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -501,7 +517,7 @@ class Mission
 						angles[]={0,5.4650445,0};
 					};
 					side="West";
-					flags=7;
+					flags=6;
 					class Attributes
 					{
 						rank="CAPTAIN";
@@ -509,8 +525,8 @@ class Mission
 						description="Commanding Officer 1st Battalion";
 						isPlayable=1;
 					};
-					id=7;
-					type="B_Soldier_unarmed_F";
+					id=184;
+					type="B_CTRG_soldier_engineer_exp_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -563,7 +579,7 @@ class Mission
 						angles[]={0,5.4650445,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						rank="CAPTAIN";
@@ -571,8 +587,8 @@ class Mission
 						description="Commanding Officer 2nd Battalion";
 						isPlayable=1;
 					};
-					id=5;
-					type="B_Soldier_unarmed_F";
+					id=185;
+					type="B_CTRG_soldier_engineer_exp_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -661,7 +677,7 @@ class Mission
 						angles[]={0,5.4650445,0};
 					};
 					side="West";
-					flags=7;
+					flags=6;
 					class Attributes
 					{
 						rank="LIEUTENANT";
@@ -669,8 +685,8 @@ class Mission
 						description="Executive Officer 1st Battalion";
 						isPlayable=1;
 					};
-					id=11;
-					type="B_Soldier_unarmed_F";
+					id=182;
+					type="B_CTRG_soldier_M_medic_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -723,7 +739,7 @@ class Mission
 						angles[]={0,5.4650445,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						rank="LIEUTENANT";
@@ -731,8 +747,8 @@ class Mission
 						description="Executive Officer 2nd Battalion";
 						isPlayable=1;
 					};
-					id=9;
-					type="B_Soldier_unarmed_F";
+					id=183;
+					type="B_CTRG_soldier_M_medic_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -821,15 +837,15 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=7;
+					flags=6;
 					class Attributes
 					{
 						rank="SERGEANT";
 						description="X-Ray Squad Leader";
 						isPlayable=1;
 					};
-					id=65;
-					type="B_Soldier_F";
+					id=146;
+					type="B_CTRG_soldier_M_medic_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -882,15 +898,15 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						rank="SERGEANT";
 						description="X-Ray Squad Assistant";
 						isPlayable=1;
 					};
-					id=66;
-					type="B_Soldier_F";
+					id=147;
+					type="B_CTRG_soldier_M_medic_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -943,14 +959,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=67;
-					type="B_Soldier_F";
+					id=148;
+					type="B_CTRG_soldier_M_medic_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1003,14 +1019,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=68;
-					type="B_Soldier_F";
+					id=149;
+					type="B_CTRG_soldier_M_medic_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1063,14 +1079,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=69;
-					type="B_Soldier_F";
+					id=150;
+					type="B_CTRG_soldier_M_medic_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1123,14 +1139,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=70;
-					type="B_Soldier_F";
+					id=151;
+					type="B_CTRG_soldier_M_medic_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1183,14 +1199,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=71;
-					type="B_Soldier_F";
+					id=152;
+					type="B_CTRG_soldier_M_medic_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1243,14 +1259,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=72;
-					type="B_Soldier_F";
+					id=153;
+					type="B_CTRG_soldier_M_medic_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1303,14 +1319,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=73;
-					type="B_Soldier_F";
+					id=154;
+					type="B_CTRG_soldier_M_medic_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1363,14 +1379,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=74;
-					type="B_Soldier_F";
+					id=155;
+					type="B_CTRG_soldier_M_medic_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1423,14 +1439,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=75;
-					type="B_Soldier_F";
+					id=156;
+					type="B_CTRG_soldier_M_medic_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1483,14 +1499,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=76;
-					type="B_Soldier_F";
+					id=157;
+					type="B_CTRG_soldier_M_medic_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1579,15 +1595,15 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=7;
+					flags=6;
 					class Attributes
 					{
 						rank="SERGEANT";
 						description="Zulu Squad Leader";
 						isPlayable=1;
 					};
-					id=78;
-					type="B_Soldier_F";
+					id=158;
+					type="B_Story_Protagonist_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1640,15 +1656,15 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						rank="SERGEANT";
 						description="Zulu Squad Assistant";
 						isPlayable=1;
 					};
-					id=79;
-					type="B_Soldier_F";
+					id=159;
+					type="B_Story_Protagonist_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1701,14 +1717,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=80;
-					type="B_Soldier_F";
+					id=160;
+					type="B_Story_Protagonist_F";
 					atlOffset=0.013153076;
 					class CustomAttributes
 					{
@@ -1762,14 +1778,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=81;
-					type="B_Soldier_F";
+					id=161;
+					type="B_Story_Protagonist_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1822,14 +1838,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=82;
-					type="B_Soldier_F";
+					id=162;
+					type="B_Story_Protagonist_F";
 					atlOffset=0.034805298;
 					class CustomAttributes
 					{
@@ -1883,14 +1899,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=83;
-					type="B_Soldier_F";
+					id=163;
+					type="B_Story_Protagonist_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1943,14 +1959,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=84;
-					type="B_Soldier_F";
+					id=164;
+					type="B_Story_Protagonist_F";
 					atlOffset=0.070556641;
 					class CustomAttributes
 					{
@@ -2004,14 +2020,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=85;
-					type="B_Soldier_F";
+					id=165;
+					type="B_Story_Protagonist_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2064,14 +2080,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=86;
-					type="B_Soldier_F";
+					id=166;
+					type="B_Story_Protagonist_F";
 					atlOffset=0.07711792;
 					class CustomAttributes
 					{
@@ -2125,14 +2141,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=87;
-					type="B_Soldier_F";
+					id=167;
+					type="B_Story_Protagonist_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2185,14 +2201,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=88;
-					type="B_Soldier_F";
+					id=168;
+					type="B_Story_Protagonist_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2245,14 +2261,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=89;
-					type="B_Soldier_F";
+					id=169;
+					type="B_Story_Protagonist_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7265,15 +7281,15 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=7;
+					flags=6;
 					class Attributes
 					{
 						rank="SERGEANT";
 						description="Guest Squad Leader";
 						isPlayable=1;
 					};
-					id=134;
-					type="B_Soldier_F";
+					id=170;
+					type="B_Story_Pilot_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7326,15 +7342,15 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						rank="SERGEANT";
 						description="Guest Squad Assistant";
 						isPlayable=1;
 					};
-					id=135;
-					type="B_Soldier_F";
+					id=171;
+					type="B_Story_Pilot_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7387,14 +7403,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=136;
-					type="B_Soldier_F";
+					id=172;
+					type="B_Story_Pilot_F";
 					atlOffset=0.013153076;
 					class CustomAttributes
 					{
@@ -7448,14 +7464,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=137;
-					type="B_Soldier_F";
+					id=173;
+					type="B_Story_Pilot_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7508,14 +7524,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=138;
-					type="B_Soldier_F";
+					id=174;
+					type="B_Story_Pilot_F";
 					atlOffset=0.034805298;
 					class CustomAttributes
 					{
@@ -7569,14 +7585,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=139;
-					type="B_Soldier_F";
+					id=175;
+					type="B_Story_Pilot_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7629,14 +7645,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=140;
-					type="B_Soldier_F";
+					id=176;
+					type="B_Story_Pilot_F";
 					atlOffset=0.070556641;
 					class CustomAttributes
 					{
@@ -7690,14 +7706,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=141;
-					type="B_Soldier_F";
+					id=177;
+					type="B_Story_Pilot_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7750,14 +7766,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=142;
-					type="B_Soldier_F";
+					id=178;
+					type="B_Story_Pilot_F";
 					atlOffset=0.07711792;
 					class CustomAttributes
 					{
@@ -7811,14 +7827,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=143;
-					type="B_Soldier_F";
+					id=179;
+					type="B_Story_Pilot_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7871,14 +7887,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=144;
-					type="B_Soldier_F";
+					id=180;
+					type="B_Story_Pilot_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7931,14 +7947,14 @@ class Mission
 						angles[]={0,5.5138092,0};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=145;
-					type="B_Soldier_F";
+					id=181;
+					type="B_Story_Pilot_F";
 					class CustomAttributes
 					{
 						class Attribute0
