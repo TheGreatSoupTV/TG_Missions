@@ -1,0 +1,398 @@
+class CfgPatches 
+{ 
+    class SherwoodCustom_Config 
+    { 
+        units[] = {"SherwoodCustom_Mod";}; 
+        weapons[] = {}; 
+        requiredVersion = 0.1; 
+        requiredAddons[] = {"A3_Characters_F"}; 
+    }; 
+}; 
+
+//************************************************************************************************************************************************************************************************
+//*****        Factions                  *********************************************************************************************************************************************************
+//************************************************************************************************************************************************************************************************
+class cfgFactionClasses 
+{ 
+    class Sherwood_Faction 
+    { 
+        displayName = "Sherwood"; 
+        priority = 3; // Position in list. 
+        side = 1; // Opfor = 0, Blufor = 1, Indep = 2. 
+        icon = ""; //Custom Icon 
+    };  
+}; 
+
+class UniformSlotInfo 
+{ 
+    slotType = 0; 
+    linkProxy = "-"; 
+}; 
+
+class CfgVehicles 
+{     
+    //************************************************************************************************************************************************************************************************
+    //*****             Units                *********************************************************************************************************************************************************
+    //************************************************************************************************************************************************************************************************
+    class B_Soldier_F; 
+    
+    class Sherwood_Soldier: B_soldier_F {
+        author = "Bulletdrop"; 
+        _generalMacro = "B_soldier_F"; 
+        scope = 2; 
+        displayName = "Sherwood Soldier"; 
+        identityTypes[] = {"Head_NATO", "G_NATO_default"}; 
+        genericNames = "NATOMen"; 
+        faction = "Sherwood_Faction";
+        model = "\A3\Characters_F_bootcamp\guerrilla\IG_guerrilla_6_1.p3d"; //Default NATO 
+        uniformClass = "Sherwood_Uniform"; 
+        hiddenSelections[] = {"Camo","Insignia"}; 
+        hiddenSelectionsTextures[] = {"\Sherwood\Data\customsherwood.paa"}; 
+         weapons[] = {"Throw","Put"}; 
+        respawnWeapons[] = {"Throw","Put"}; 
+    };
+
+    class Bag_Base;
+    class New_Bag: Bag_Base
+    {
+        author = "BulletDrop";
+        scope = 2;
+        model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Compact";
+        displayName = "Sherwood CamoPack";
+        picture = "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_dgtl_ca.paa";
+        hiddenSelectionsTextures[]={"\Sherwood\Data\sherback.paa"};
+        maximumLoad = 160;
+        mass = 20;
+    };
+};
+class cfgWeapons 
+{ 
+    //********************************************************************************************************************************************************************************************
+    //*****            Uniforms              *****************************************************************************************************************************************************
+    //********************************************************************************************************************************************************************************************
+    class ItemCore; 
+    class UniformItem; 
+    class Uniform_Base: ItemCore 
+    { 
+        class ItemInfo; 
+    }; 
+
+    class Sherwood_Uniform: Uniform_Base 
+    { 
+        author = "BulletDrop";
+		scope = 2; 
+        displayName = "Sherwood New"; 
+        picture = "\A3\Characters_f_beta\indep\data\ia_soldier_01_clothing_co.paa"; 
+        model = "\A3\Characters_F_bootcamp\guerrilla\IG_guerrilla_6_1.p3d"; 
+        class ItemInfo : UniformItem { 
+            uniformClass = "Sherwood_Soldier"; 
+            containerClass = Supply50; 
+            mass = 35;
+			capacity = 40; 
+        }; 
+    }; 
+	//********************************************************************************************************************************************************************************************
+    //*****            Vest              *****************************************************************************************************************************************************
+    //********************************************************************************************************************************************************************************************
+	class Vestitem;
+	class Vest_Camo_Base: itemcore
+	{
+		class Iteminfo;
+	};
+		
+	class Custom_Vest: Vest_Camo_Base
+	{
+		author = "BulletDrop";
+		scope = 2;
+		displayname = "Sherwood Mk1";
+		picture = "A3\characters_f\data\ui\icon_v_plate_carrier_2_ca.paa";
+		model = "A3\characters_f\BLUFOR\equip_b_vest02";
+		hiddenselections[] = {"camo"};
+		hiddenselectionsTextures[] = {"\Sherwood\Data\customvest.paa"};
+		class Iteminfo: Vestitem
+		{
+			uniformModel = "A3\characters_f\BLUFOR\equip_b_vest02.p3d";
+			containerClass = Supply150;
+			mass = 55;
+			armor = 20;
+			capacity = 140
+			passThrough = 0.5
+			hiddenselections[] = {"camo"};
+		};
+	};	
+	
+	class Vestitem1;
+	class Vest_Camo_Base1: itemcore
+	{
+		class Iteminfo;
+	};
+		
+	class Custom_Vest2: Vest_Camo_Base
+	{
+		author = "BulletDrop";
+		scope = 2;
+		displayname = "Sherwood Mk2";
+		picture = "A3\characters_f\data\ui\icon_v_plate_carrier_2_ca.paa";
+		model = "A3\characters_f\BLUFOR\equip_b_vest01";
+		hiddenselections[] = {"camo"};
+		hiddenselectionsTextures[] = {"\Sherwood\Data\customvest.paa"};
+		class Iteminfo: Vestitem
+		{
+			uniformModel = "A3\characters_f\BLUFOR\equip_b_vest01.p3d";
+			containerClass = Supply150;
+			mass = 75;
+			capacity = 125;
+			armor = 30;
+			passThrough = 0.5
+			hiddenselections[] = {"camo"};
+		};
+	};	
+	
+	class Vestitem2;
+	class Vest_Camo_Base2: itemcore
+	{
+		class Iteminfo;
+	};
+		
+	class Custom_Vest3: Vest_Camo_Base
+	{
+		author = "BulletDrop";
+		scope = 2;
+		displayname = "Blackjack's Vest";
+		picture = "A3\characters_f\data\ui\icon_v_plate_carrier_2_ca.paa";
+		model = "A3\characters_f\BLUFOR\equip_b_vest02";
+		hiddenselections[] = {"camo"};
+		hiddenselectionsTextures[] = {"\Sherwood\Data\Blackjackvest.paa"};
+		class Iteminfo: Vestitem
+		{
+			uniformModel = "A3\characters_f\BLUFOR\equip_b_vest02.p3d";
+			containerClass = Supply150;
+			mass = 75;
+			capacity = 125;
+			armor = 30;
+			passThrough = 0.5
+			hiddenselections[] = {"camo"};
+		};
+	};
+/// H_HelmetB config ///
+ 
+    class HeadgearItem;
+    class H_HelmetB: ItemCore
+    {
+        author = "BulletDrop";
+        scope = 2;
+        weaponPoolAvailable = 1;
+        displayName = "Sherwood ECH";
+        picture = "\A3\characters_f\Data\UI\icon_H_helmet_plain_ca.paa";
+        model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\Sherwood\Data\Sherwoodhelmet.paa"};
+        class ItemInfo: HeadgearItem
+        {
+            mass = 35;
+            uniformModel = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
+            modelSides[] = {TCivilian, TWest};
+            armor = 4;
+            passThrough = 0.3;
+            hiddenSelections[] = {"camo"};
+        };
+    };
+	
+	class HeadgearItem1;
+    class H_HelmetB1: ItemCore
+    {
+        author = "BulletDrop";
+        scope = 2;
+        weaponPoolAvailable = 1;
+        displayName = "Sherwood Light";
+        picture = "\A3\characters_f\Data\UI\icon_H_helmet_plain_ca.paa";
+        model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_plain";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\Sherwood\Data\Sherwoodhelmet.paa"};
+        class ItemInfo: HeadgearItem
+        {
+            mass = 25;
+            uniformModel = "\A3\Characters_F\BLUFOR\headgear_b_helmet_plain";
+            modelSides[] = {TCivilian, TWest};
+            armor = 3;
+            passThrough = 0.4;
+            hiddenSelections[] = {"camo"};
+        };
+    };
+	
+	class HeadgearItem2;
+    class H_HelmetB2: ItemCore
+    {
+        author = "BulletDrop";
+        scope = 2;
+        weaponPoolAvailable = 1;
+        displayName = "Blackjack's Crown";
+        picture = "\A3\characters_f\Data\UI\icon_H_helmet_plain_ca.paa";
+        model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\Sherwood\Data\blackjackhelmet.paa"};
+        class ItemInfo: HeadgearItem
+        {
+            mass = 25;
+            uniformModel = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
+            modelSides[] = {TCivilian, TWest};
+            armor = 3;
+            passThrough = 0.4;
+            hiddenSelections[] = {"camo"};
+        };
+    };
+	
+
+/// Bag_Base config ///
+ 
+
+
+    class ReammoBox;
+    class Bag_Base: ReammoBox
+    {
+        scope = 1;
+        class TransportMagazines {};
+        class TransportWeapons{};
+        isbackpack = 1;
+        reversed = 1;
+        mapSize = 2;
+        vehicleClass = Backpacks;
+        allowedSlots[] = {901};
+        model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Small";
+        displayName = "Sherwood Camopack";
+        picture = "\A3\Weapons_F\Ammoboxes\Bags\data\ui\backpack_CA.paa";
+        icon = "iconBackpack";
+        transportMaxWeapons = 1;
+        transportMaxMagazines = 20;
+        class DestructionEffects {};
+        hiddenSelections[] = {"Camo"};
+        hiddenSelectionsTextures[] = {"\A3\weapons_f\ammoboxes\bags\data\backpack_small_hex_co.paa"};
+        maximumLoad = 0;
+        side = 3;
+    };
+};
+
+class CfgUnitInsignia
+{
+	class SM
+	{
+		displayName = "Squad Member"; // Name displayed in Arsenal
+		author = "BulletDrop"; // Author displayed in Arsenal
+		texture = "\Sherwood\data\sm.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+	
+	class SA
+	{
+		displayName = "Squad Assistant"; // Name displayed in Arsenal
+		author = "BulletDrop"; // Author displayed in Arsenal
+		texture = "\Sherwood\data\sa.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+	
+	class SL
+	{
+		displayName = "Squad Leader"; // Name displayed in Arsenal
+		author = "BulletDrop"; // Author displayed in Arsenal
+		texture = "\Sherwood\data\sl.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+	class XO
+	{
+		displayName = "Executive Officer"; // Name displayed in Arsenal
+		author = "BulletDrop"; // Author displayed in Arsenal
+		texture = "\Sherwood\data\xo.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+	class CO
+	{
+		displayName = "Commanding Officer"; // Name displayed in Arsenal
+		author = "BulletDrop"; // Author displayed in Arsenal
+		texture = "\Sherwood\data\co.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+	class BGC
+	{
+		displayName = "Brigade Commander"; // Name displayed in Arsenal
+		author = "BulletDrop"; // Author displayed in Arsenal
+		texture = "\Sherwood\data\bgc.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+	class DO
+	{
+		displayName = "Division Officer"; // Name displayed in Arsenal
+		author = "BulletDrop"; // Author displayed in Arsenal
+		texture = "\Sherwood\data\do.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+	class Tiger
+	{
+		displayName = "Tiger"; // Name displayed in Arsenal
+		author = "BulletDrop"; // Author displayed in Arsenal
+		texture = "\Sherwood\data\tiger.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+	class Bullet
+	{
+		displayName = "Bullet"; // Name displayed in Arsenal
+		author = "BulletDrop"; // Author displayed in Arsenal
+		texture = "\Sherwood\data\Bullet.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+	class sm13
+	{
+		displayName = "1-3"; // Name displayed in Arsenal
+		author = "BulletDrop"; // Author displayed in Arsenal
+		texture = "\Sherwood\data\1-3.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+	class sm14
+	{
+		displayName = "1-4"; // Name displayed in Arsenal
+		author = "BulletDrop"; // Author displayed in Arsenal
+		texture = "\Sherwood\data\1-4.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+	class sm15
+	{
+		displayName = "1-5"; // Name displayed in Arsenal
+		author = "BulletDrop"; // Author displayed in Arsenal
+		texture = "\Sherwood\data\1-5.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+	class sm16
+	{
+		displayName = "1-6"; // Name displayed in Arsenal
+		author = "BulletDrop"; // Author displayed in Arsenal
+		texture = "\Sherwood\data\1-6.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+	class sm17
+	{
+		displayName = "1-7"; // Name displayed in Arsenal
+		author = "BulletDrop"; // Author displayed in Arsenal
+		texture = "\Sherwood\data\1-7.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+	class sm18
+	{
+		displayName = "1-8"; // Name displayed in Arsenal
+		author = "BulletDrop"; // Author displayed in Arsenal
+		texture = "\Sherwood\data\1-8.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+	class sm19
+	{
+		displayName = "1-9"; // Name displayed in Arsenal
+		author = "BulletDrop"; // Author displayed in Arsenal
+		texture = "\Sherwood\data\1-9.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+	class sm110
+	{
+		displayName = "1-10"; // Name displayed in Arsenal
+		author = "BulletDrop"; // Author displayed in Arsenal
+		texture = "\Sherwood\data\1-10.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+};	

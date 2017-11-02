@@ -1,5 +1,6 @@
 author = Duke_of_Games_25 [TG], JediNarwals [TG];
-overviewText = "Arma Division Divional Operations";
+briefingName="TacticalGaming.net/HQ Chenarus Operations";
+overviewText="Tactical Gaming Chenarus Operations";
 onLoadName = Tactical Gaming Stratis Operations;
 
 respawn      = 			"BASE";
