@@ -1,7 +1,7 @@
 author = Duke_of_Games_25 [TG], JediNarwals [TG];
 briefingName="TacticalGaming.net/HQ DEV Operations";
 overviewText="Tactical Gaming DEV Operations";
-onLoadName = Tactical Gaming Stratis Operations;
+onLoadName = Tactical Gaming DEV Operations;
 
 respawn      = 			"BASE";
 respawndelay = 			3;
