@@ -31,7 +31,7 @@ player addItemToVest "SmokeShellRed";
 for "_i" from 1 to 4 do {player addItemToVest "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
 player addBackpack "everest_packDesert";
 player addItemToBackpack "ACE_DefusalKit";
-for "_i" from 1 to 4 do {this addItemToBackpack "DemoCharge_Remote_Mag";};
+for "_i" from 1 to 4 do {player addItemToBackpack "DemoCharge_Remote_Mag";};
 player addHeadgear "Desert_ECH";
 
 player addWeapon "rhs_weap_m4a1_blockII_bk";
