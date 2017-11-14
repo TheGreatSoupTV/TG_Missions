@@ -1,7 +1,7 @@
 author = Duke_of_Games_25 [TG], JediNarwals [TG];
 briefingName="TacticalGaming.net/HQ Chenarus Operations";
 overviewText="Tactical Gaming Chenarus Operations";
-onLoadName = Tactical Gaming Stratis Operations;
+onLoadName = Tactical Gaming Chenarus Operations;
 
 respawn      = 			"BASE";
 respawndelay = 			3;

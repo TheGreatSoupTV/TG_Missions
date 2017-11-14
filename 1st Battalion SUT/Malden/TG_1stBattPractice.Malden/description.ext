@@ -1,7 +1,7 @@
 author = Duke_of_Games_25 [TG], JediNarwals [TG];
 briefingName="TacticalGaming.net/HQ Malden Operations";
 overviewText="Tactical Gaming Malden Operations";
-onLoadName = Tactical Gaming Stratis Operations;
+onLoadName = Tactical Gaming Malden Operations;
 
 respawn      = 			"BASE";
 respawndelay = 			3;
