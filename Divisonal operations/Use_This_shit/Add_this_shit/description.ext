@@ -1,7 +1,7 @@
 //------------------------- On Load
 
-author = Mirrow;		// Visible when loading mission
-onLoadName = "TG 2nd Batt";					// Visible when loading mission
+author = Mirrow [TG], JediNarwals [TG];		// Visible when loading mission
+onLoadName = "Tactical Gaming Battalion Operations";					// Visible when loading mission
 OnLoadMission = "TG rules and regulations are in effect while this mission is active.";
 loadScreen = "images\loadingScreen.jpg";
 overviewPicture = "images\loadingScreen.jpg";
