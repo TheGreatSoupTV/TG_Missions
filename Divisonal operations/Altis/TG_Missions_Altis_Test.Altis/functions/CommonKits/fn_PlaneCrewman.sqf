@@ -43,25 +43,33 @@ player setVariable ["ACE_GForceCoef", 0.55];
 
 switch (true) do
 {
-	case (typeOf player == "B_Soldier_F"):
+	case (typeOf player == "B_CTRG_soldier_GL_LAT_F"):
 	{
-		[player, "Alpha"] remoteExec ["BIS_fnc_setUnitInsignia", player, true];
+		[player, "TacticalGaming"] remoteExec ["BIS_fnc_setUnitInsignia", player, true];
 	};
-	case (typeOf player == "B_Soldier_lite_F"):
+	case (typeOf player == "B_CTRG_Sharphooter_F"):
 	{
-		[player, "Bravo"] remoteExec ["BIS_fnc_setUnitInsignia", player, true];
+		[player, "TacticalGaming"] remoteExec ["BIS_fnc_setUnitInsignia", player, true];
 	};
-	case (typeOf player == "B_officer_F"):
+	case (typeOf player == "B_CTRG_soldier_M_medic_F"):
 	{
-		[player, "Charlie"] remoteExec ["BIS_fnc_setUnitInsignia", player, true];
+		[player, "Everest"] remoteExec ["BIS_fnc_setUnitInsignia", player, true];
 	};
-	case (typeOf player == "B_Soldier_unarmed_F"):
+	case (typeOf player == "B_CTRG_soldier_engineer_exp_F"):
 	{
-		[player, "Sherwood"] remoteExec ["BIS_fnc_setUnitInsignia", player, true];
+		[player, "Everest"] remoteExec ["BIS_fnc_setUnitInsignia", player, true];
 	};
 	case (typeOf player == "B_Survivor_F"):
 	{
 		[player, "Everest"] remoteExec ["BIS_fnc_setUnitInsignia", player, true];
+	};
+	case (typeOf player == "B_Story_Protagonist_F"):
+	{
+		[player, "Zulu"] remoteExec ["BIS_fnc_setUnitInsignia", player, true];
+	};
+	case (typeOf player == "B_CTRG_soldier_M_medic_F"):
+	{
+		[player, "X-Ray"] remoteExec ["BIS_fnc_setUnitInsignia", player, true];
 	};
 };
 
