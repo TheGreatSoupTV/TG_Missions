@@ -2,9 +2,9 @@
 	@file		initPlayerLocal.sqf
 	@author		JediNarwals [TG]
 	@description
-		
+
 		Initializes the player local scripts.
-		
+
 */
 
 //------------------- Client Execution
@@ -23,8 +23,8 @@ removeBackpack player;
 removeHeadgear player;
 removeGoggles player;
 
-player forceAddUniform "everestnightClothing";
-player addVest "nightVest";
+player forceAddUniform "Scorpion_Camo_Cyre";
+player addVest "Scorpion_Vest_1";
 
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
@@ -32,5 +32,4 @@ player linkItem "ACE_Altimeter";
 player linkItem "tf_anprc152_9";
 player linkItem "ItemGPS";
 
-player setFace "WhiteHead_21";
 player setSpeaker "ACE_NoVoice";
