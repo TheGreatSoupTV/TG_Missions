@@ -27,9 +27,9 @@ allowFunctionsLog = 0; 									// Log functions to .rpt. disabled with 0
 Respawn = 3;											// 0 = none. 1 = bird. 2 = instant where died. 3 = base or respawn_west marker. 4 = respawn with team, or bird. 5 = into AI or bird.
 RespawnDelay = 5;										// Delay prior to respawn, ensure longer than BTC revive delay.
 RespawnOnStart = 0;										// DEATH TO ALL HUMANS!!!
-respawnTemplates[] = {"MenuPosition", "MenuInventory"};
+//respawnTemplates[] = {"MenuPosition", "MenuInventory"};
 
-class CfgRespawnInventory
+/*class CfgRespawnInventory
 {
     #include "configs\spawnEquipment.hpp"
 };
@@ -37,7 +37,7 @@ class CfgRoles
 {
 	#include "configs\roleList.hpp"
 };
-
+*/
 //------------------------- Corpse/Wreck Manager
 
 corpseManagerMode = 1; //0 = none, 1= ALL, 2 = None_But_Respawned, 3 = All_But_Respawned
@@ -60,9 +60,11 @@ joinUnassigned = 1;										// 0 = players forced into role on joinlated.
 
 //------------------------- Includes / Functions
 
+#include "taw_vd\GUI.h"									// TAW View Distance
 class CfgFunctions
 {
 	#include "configs\functions.hpp"
+	#include "taw_vd\CfgFunctions.hpp"					// View distance
 };
 #include "dialogs\defines.hpp"
 #include "dialogs\StandardLoadoutUI.hpp"
