@@ -35,4 +35,6 @@ player linkItem "ItemGPS";
 
 player setSpeaker "ACE_NoVoice";
 
-[player] joinSilent (createGroup playerSide);
+{
+  [player] joinSilent (group _x);
+} foreach allPlayers;
