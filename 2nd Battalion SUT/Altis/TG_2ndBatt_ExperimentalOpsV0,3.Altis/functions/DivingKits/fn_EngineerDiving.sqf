@@ -59,29 +59,5 @@ player setSpeaker "ACE_NoVoice";
 
 player setVariable ["ACE_GForceCoef", 1];
 
-switch (true) do
-{
-	case (typeOf player == "B_Soldier_F"):
-	{
-		[player, "Alpha"] remoteExec ["BIS_fnc_setUnitInsignia", player, true];
-	};
-	case (typeOf player == "B_Soldier_lite_F"):
-	{
-		[player, "Bravo"] remoteExec ["BIS_fnc_setUnitInsignia", player, true];
-	};
-	case (typeOf player == "B_officer_F"):
-	{
-		[player, "Charlie"] remoteExec ["BIS_fnc_setUnitInsignia", player, true];
-	};
-	case (typeOf player == "B_Soldier_unarmed_F"):
-	{
-		[player, "Sherwood"] remoteExec ["BIS_fnc_setUnitInsignia", player, true];
-	};
-	case (typeOf player == "B_Survivor_F"):
-	{
-		[player, "Everest"] remoteExec ["BIS_fnc_setUnitInsignia", player, true];
-	};
-};
-
 [[player],"ace_medical_medicClass", 0, true] call ace_common_fnc_assignObjectsInList;
 [[player],"ACE_IsEngineer", 1, true] call ace_common_fnc_assignObjectsInList;
