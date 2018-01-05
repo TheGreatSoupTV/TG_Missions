@@ -31,7 +31,7 @@ player addItemToVest "SmokeShellRed";
 for "_i" from 1 to 4 do {player addItemToVest "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
 player addBackpack "everest_packDesert";
 player addItemToBackpack "ACE_DefusalKit";
-for "_i" from 1 to 4 do {this addItemToBackpack "DemoCharge_Remote_Mag";};
+for "_i" from 1 to 4 do {player addItemToBackpack "DemoCharge_Remote_Mag";};
 player addHeadgear "Desert_ECH";
 
 player addWeapon "rhs_weap_m4a1_blockII_bk";
@@ -52,3 +52,38 @@ player linkItem "NVGoggles_OPFOR";
 comment "Set identity";
 player setFace "WhiteHead_11";
 player setSpeaker "ace_novoice";
+
+switch (true) do
+{
+	case (typeOf player == "B_CTRG_soldier_GL_LAT_F"):
+	{
+		[player, "TacticalGaming"] remoteExec ["BIS_fnc_setUnitInsignia", player, true];
+	};
+	case (typeOf player == "B_CTRG_Sharphooter_F"):
+	{
+		[player, "TacticalGaming"] remoteExec ["BIS_fnc_setUnitInsignia", player, true];
+	};
+	case (typeOf player == "B_CTRG_soldier_M_medic_F"):
+	{
+		[player, "Everest"] remoteExec ["BIS_fnc_setUnitInsignia", player, true];
+	};
+	case (typeOf player == "B_CTRG_soldier_engineer_exp_F"):
+	{
+		[player, "Everest"] remoteExec ["BIS_fnc_setUnitInsignia", player, true];
+	};
+	case (typeOf player == "B_Survivor_F"):
+	{
+		[player, "Everest"] remoteExec ["BIS_fnc_setUnitInsignia", player, true];
+	};
+	case (typeOf player == "B_Story_Protagonist_F"):
+	{
+		[player, "Zulu"] remoteExec ["BIS_fnc_setUnitInsignia", player, true];
+	};
+	case (typeOf player == "B_CTRG_soldier_M_medic_F"):
+	{
+		[player, "X-Ray"] remoteExec ["BIS_fnc_setUnitInsignia", player, true];
+	};
+};
+
+[[player],"ace_medical_medicClass", 0, true] call ace_common_fnc_assignObjectsInList;
+[[player],"ACE_IsEngineer", 1, true] call ace_common_fnc_assignObjectsInList;
