@@ -15,6 +15,7 @@ player addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
 player addPrimaryWeaponItem "rhsusf_acc_eotech_xps3";
 player addWeapon "rhsusf_weap_glock17g4";
 player addHandgunItem "acc_flashlight_pistol";
+player addHandgunItem "rhsusf_acc_omega9k";
 
 comment "Add containers";
 player forceAddUniform "Tiger_Camo_Cyre_GS";
