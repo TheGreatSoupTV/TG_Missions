@@ -1,7 +1,7 @@
 author = Duke_of_Games_25 [TG], JediNarwals [TG];
 briefingName="TacticalGaming.net/HQ Tanoa Operations";
 overviewText="Tactical Gaming Tanoa Operations";
-onLoadName = Tactical Gaming Stratis Operations;
+onLoadName = Tactical Gaming Tanoa Operations;
 
 respawn      = 			"BASE";
 respawndelay = 			3;

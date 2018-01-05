@@ -1,7 +1,7 @@
 author = Duke_of_Games_25 [TG], JediNarwals [TG];
 briefingName="TacticalGaming.net/HQ Sahrani Operations";
 overviewText="Tactical Gaming Sahrani Operations";
-onLoadName = Tactical Gaming Stratis Operations;
+onLoadName = Tactical Gaming Sahrani Operations;
 
 respawn      = 			"BASE";
 respawndelay = 			3;

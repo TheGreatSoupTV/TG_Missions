@@ -2,9 +2,9 @@
 	@file		initPlayerLocal.sqf
 	@author		JediNarwals [TG]
 	@description
-		
+
 		Initializes the player local scripts.
-		
+
 */
 
 //------------------- Client Execution

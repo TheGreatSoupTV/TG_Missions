@@ -1,7 +1,7 @@
 author = TheGreatSoupTV [TG], JediNarwals [TG];
 briefingName="TacticalGaming.net/HQ Zargadad Operations";
 overviewText="Tactical Gaming Zargadad Operations";
-onLoadName = Tactical Gaming Stratis Operations;
+onLoadName = Tactical Gaming Zargadad Operations;
 
 respawn      = 			"BASE";
 respawndelay = 			3;
